@@ -1,5 +1,23 @@
+@font-face { 
+	font-family: 'jedisolid'; 
+	src: url('../resources/jedisolid.otf') format('truetype');
+}
+
 body {
 	background:#eee;
-	font-family:Helvetica,Arial;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
+}
+
+.matto {
+	font-family: jedisolid, sans-serif;
+}
+
+nav {
+	background-color: white;
+}
+
+.basket-icon {
+	width: 30px;
+	height: 30px;
 }
