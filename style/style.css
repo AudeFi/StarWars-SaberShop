@@ -31,6 +31,7 @@ header .input-border {
 	border: 1px solid #FEFEFE;
 	border-radius: 50px;
 	display: inline-block;
+
 }
 
 header .input-border input {
@@ -41,6 +42,7 @@ header .input-border input {
   	box-shadow: none;
   	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
+	color:#FEFEFE;
 }
 
 header .input-border input:focus {
@@ -82,6 +84,11 @@ header a {
 	color: black;
 }
 
+header a:hover {
+	text-decoration: none;
+	color: #767676;
+}
+
 
 /*
 ** VIDEO 
@@ -91,7 +98,21 @@ header a {
 video{
 	width:100%;
 	background-size: cover;
+	position:relative;
+
+	margin-top: -50px;
+	z-index: -5;
 }
+
+.vid{
+	width: 100%;
+	height: 100%;
+	background: red;
+}
+
+/*
+** TITLE
+*/
 
 .matto {
 	font-family: 'jedisolid', sans-serif;
@@ -115,4 +136,98 @@ video{
 	color:#FEFEFE;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 25px;
+}
+
+/*
+** CONTAINER
+*/
+
+.container{
+	width: 100%;
+	height: 800px;
+}
+
+/*
+** TITLE
+*/
+.title-side{
+	text-align: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	width: 200px;
+	margin:auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.title-side p{
+	
+	font-size: 16px;
+}
+
+/*
+** CHOOSE YOUR COLOR
+*/
+
+.container{
+}
+
+.choose-side{
+	width: 100%;
+
+}
+
+.choose-side .green{
+	position: relative;
+	display: inline-block;
+	width: 21%;
+	background: green;
+	height: 529px;
+	margin-right: 20px;
+	margin-left: 60px;
+}
+
+.choose-side .green img{
+	width:100%;
+	height: 529px;
+}
+
+
+
+.choose-side .red{
+	display: inline-block;
+	width:21%;
+	background:red;
+	height:529px;
+	margin-right:20px;
+}
+
+.choose-side .red img{
+	width: 100%;
+	height: 529px;
+}
+
+.choose-side .blue{
+	display: inline-block;
+	width:21%;
+	background:blue;
+	height:529px;
+	margin-right:20px;
+}
+
+.choose-side .blue img{
+	width: 100%;
+	height: 529px;
+}
+
+.choose-side .others{
+	display: inline-block;
+	width:21%;
+	background:purple;
+	height:529px;
+}
+
+.choose-side .others img{
+	width: 100%;
+	height: 529px;
 }
