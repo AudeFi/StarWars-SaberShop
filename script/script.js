@@ -1,8 +1,7 @@
 var input_research = document.querySelector('.input-research');
 var force_nav = document.querySelector('.force-nav');
 var force_link = document.querySelector('.force-a');
-var video = document.querySelector('.video-section');
-console.log(video.height);
+
 
 input_research.addEventListener('click',function(){
 	var not_available = document.querySelector(".noresearch");
@@ -23,11 +22,16 @@ force_nav.addEventListener('mouseleave', function(){
 
 $(document).ready(function(){
 	$(window).scroll(function() {
-
-    //if I scroll more than 1000px...
-    if($(window).scrollTop() > video.height){
-         //do whatever
-         console.log('scroll');
-    }
-});
+		var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
+		if (file == "index.html"){
+			var video = document.querySelector('.video-section');
+			var header = document.querySelector('header');
+			if($(window).scrollTop() > 600){
+		        header.classList.remove('bg-header');
+		    }
+		    else{
+		    	header.classList.add('bg-header');
+		    }
+		}
+	});
 });

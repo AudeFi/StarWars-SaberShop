@@ -4,7 +4,7 @@
 }
 
 body {
-	background:#FEFEFE;
+	background:#eeeeee;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	font-weight: light;
@@ -21,13 +21,18 @@ header {
 	overflow:hidden;
 	position: fixed;
 	z-index: 10;
+	background-color: #202020;
+}
+
+header.bg-header {
+	background-color: transparent;
 }
 
 header .input-border {
 	width: 200px;
 	height: 25px;
 	position: absolute;
-	bottom: 0px;
+	bottom: 12px;
 	left: 55px;
 	border: 1px solid #FEFEFE;
 	border-radius: 50px;
@@ -56,7 +61,7 @@ header .basket-icon {
 	display: inline-block;
 	position: absolute;
 	left: 300px;
-	 bottom: 0px;
+	bottom: 12px;
 }
 
 header nav {
@@ -91,11 +96,11 @@ header a:hover {
 }
 
 .noresearch {
-	position: absolute;
+	position: fixed;
 	background-color: #fefefe;
 	width: 170px;
 	height: 20px;
-	top: 30px;
+	top: 20px;
 	left: 71px;
 	text-align: center;
 	line-height: 20px;
@@ -105,12 +110,13 @@ header a:hover {
 
 .noresearch.visible {
 	opacity: 1;
-	top: 60px;
+	top: 50px;
+	z-index: 20;
 	transition: all 0.5s ease;
 }
 
 .force-nav {
-	position: absolute;
+	position: fixed;
 	background-color: #fefefe;
 	width: 100px;
 	height: 120px;
@@ -246,7 +252,7 @@ video{
 	background: green;
 }
 
-.choose-side .green img:hover{
+.choose-side .green:hover img{
 	opacity: 0.7;
 }
 
@@ -254,7 +260,7 @@ video{
 	background:red;
 }
 
-.choose-side .red img:hover{
+.choose-side .red:hover img{
 	opacity:0.7;
 }
 
@@ -262,7 +268,7 @@ video{
 	background:blue;
 }
 
-.choose-side .blue img:hover{
+.choose-side .blue:hover img{
 	opacity:0.7;
 }
 
@@ -270,8 +276,35 @@ video{
 	background:purple;
 }
 
-.choose-side .others img:hover{
+.choose-side .others:hover img{
 	opacity:0.7;
+}
+
+.choose-side p {
+	position: absolute;
+	width: 100%;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	z-index: 5;
+	margin-top: 80%;
+	text-align: center;
+	visibility: hidden;
+	transition: all 0.2s ease;
+}
+
+
+.choose-side .others:hover p{
+	visibility: visible;
+}
+.choose-side .red:hover p{
+	visibility: visible;
+}
+.choose-side .green:hover p{
+	visibility: visible;
+}
+.choose-side .blue:hover p{
+	visibility: visible;
 }
 
 /*
