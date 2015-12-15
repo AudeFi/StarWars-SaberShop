@@ -6,18 +6,84 @@
 body {
 	background:#eee;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: light;
+	margin:0;
 }
+
+/*
+** HEADER 
+*/
+
+header {
+	width: 100%;
+	height: 50px;
+	overflow:hidden;
+	position: relative;
+}
+
+header .input-border {
+	width: 200px;
+	height: 25px;
+	position: absolute;
+	bottom: 0px;
+	left: 55px;
+	border: 1px solid white;
+	border-radius: 50px;
+	display: inline-block;
+}
+
+header .input-border input {
+	background-color: transparent;
+	border: none;
+	margin-top: 4px;
+	margin-left: 25px;
+  	box-shadow: none;
+  	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+
+header .input-border input:focus {
+	outline: none;
+}
+
+header .basket-icon {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	left: 300px;
+	 bottom: 0px;
+}
+
+header nav {
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	right: -40px;
+	top:0;
+	text-align: center;
+	padding-top:15px;
+	padding-right: 20px;
+}
+
+header .bg-nav {
+	width:400px;
+	height: 50px;
+	background-color: white;
+	position: absolute;
+	right: -40px;
+	top:0;
+	transform: skewX(-40deg);
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+
 
 .matto {
 	font-family: jedisolid, sans-serif;
-}
-
-nav {
-	background-color: white;
-}
-
-.basket-icon {
-	width: 30px;
-	height: 30px;
 }
