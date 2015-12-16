@@ -15,6 +15,11 @@ force_link.addEventListener('mouseover', function(){
 	force_nav.classList.add("visible");
 });
 
+force_link.addEventListener('click', function(){
+	force_nav.classList.add("visible");
+});
+
+
 force_nav.addEventListener('mouseleave', function(){
 	force_nav.classList.remove("visible");
 });
