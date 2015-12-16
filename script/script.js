@@ -25,7 +25,7 @@ $(document).ready(function(){
 		var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
 		if (file == "index.html"){
 			var video = document.querySelector('.video-section');
-			var header = document.querySelector('header');
+			var header = document.querySelector('.header-section');
 			if($(window).scrollTop() > 600){
 		        header.classList.remove('bg-header');
 		    }
