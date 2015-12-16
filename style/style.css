@@ -2,6 +2,34 @@
 	font-family: 'jedisolid'; 
 	src: url('../resources/jedisolid.otf') format('truetype');
 }
+@font-face { 
+	font-family: 'ProximaNova-Black'; 
+	src: url('../resources/ProximaNova-Black.otf') format('truetype');
+}
+@font-face { 
+	font-family: 'ProximaNova-Bold'; 
+	src: url('../resources/ProximaNova-Bold.otf') format('truetype');
+}
+@font-face { 
+	font-family: 'ProximaNova-Light'; 
+	src: url('../resources/ProximaNova-Light.otf') format('truetype');
+}
+@font-face { 
+	font-family: 'ProximaNova-LightItalic'; 
+	src: url('../resources/ProximaNova-LightItalic.otf') format('truetype');
+}
+@font-face { 
+	font-family: 'ProximaNova-Regular'; 
+	src: url('../resources/ProximaNova-Regular.otf') format('truetype');
+}
+@font-face { 
+	font-family: 'ProximaNova-RegularItalic'; 
+	src: url('../resources/ProximaNova-RegularItalic.otf') format('truetype');
+}
+@font-face { 
+	font-family: 'ProximaNova-Semibold'; 
+	src: url('../resources/ProximaNova-Semibold.otf') format('truetype');
+}
 
 body {
 	background:#eeeeee;
