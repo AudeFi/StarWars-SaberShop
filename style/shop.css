@@ -1,0 +1,296 @@
+body {
+	background: black;
+}
+
+.e-commerce {
+	width: 1200px;
+	margin: auto;
+	padding-top: 120px;
+	padding-bottom: 60px;
+	font-size: 0px;
+	color: white;
+}
+
+.row {
+	display: inline-block;
+	height: 600px;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.row div {
+	display: block;
+}
+
+
+/*
+** IMAGE AND INFOS
+*/
+
+.row.image-infos{
+	width: 50%;
+	font-size: 15px
+}
+
+.image-infos .return{
+	width: 120px;
+	height: 25px;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 15px;
+	margin-left: 50px;
+}
+
+.blue.image-infos .return{
+	border: 1px solid #12ACFB;
+}
+.red.image-infos .return{
+	border: 1px solid #d0021b;
+}
+.green.image-infos .return{
+	border: 1px solid #00d23d;
+}
+.others.image-infos .return{
+	border: 1px solid #bd10e0;
+}
+
+
+.image-infos .return span{
+	vertical-align: middle;
+}
+
+.image-infos .image{
+	width: 100%;
+	height: 400px;
+}
+
+.image-infos .image img{
+	height: 100%;
+}
+
+.image-infos .button{
+	width: 120px;
+	height: 25px;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 15px;
+	margin-left: 50%;
+}
+
+
+.e-commerce .blue .button{
+	border: 1px solid #12ACFB;
+	background-color: #12ACFB;
+}
+.e-commerce .red .button{
+	border: 1px solid #d0021b;
+	background-color: #d0021b;
+}
+.e-commerce .green .button{
+	border: 1px solid #00d23d;
+	background-color: #00d23d;
+}
+.e-commerce .others .button{
+	border: 1px solid #bd10e0;
+	background-color: #bd10e0;
+}
+
+
+.image-infos .open-close span{
+	vertical-align: middle;
+}
+
+.image-infos .infos{
+	margin-left: 50px;
+	margin-top: 30px;
+	width: 70%;
+}
+
+.image-infos .infos span{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.image-infos .infos .info-text{
+	font-size: 12px;
+	font-weight: light;
+}
+
+
+
+/*
+** PRODUCT
+*/
+
+.row.products {
+	width:10%;
+}
+
+.red.row.products{
+	overflow: scroll;
+}
+
+.products .others {
+	font-size: 11px;
+	width: 100%;
+	text-align:center;
+	margin-top: 30px;
+}
+
+.products .product {
+	width: 110px;
+	height: 110px;
+	margin: 8px auto;
+}
+
+.blue.products .product{
+	border: 1px solid #12ACFB;
+}
+.red.products .product{
+	border: 1px solid #d0021b;
+}
+.green.products .product{
+	border: 1px solid #00d23d;
+}
+.others.products .product{
+	border: 1px solid #bd10e0;
+}
+
+
+.products .product img{
+	width: 100%;
+}
+
+
+
+/*
+** OPTIONS
+*/
+
+.row.choose-options{
+	width: 40%;
+	padding-left: 30px;
+}
+
+.choose-options .type{
+	font-size: 16px;
+	padding: 5px 0;
+}
+
+.blue.choose-options .type{
+	color: #12ACFB;
+}
+.red.choose-options .type{
+	color: #d0021b;
+}
+.green.choose-options .type{
+	color: #00d23d;
+}
+.others.choose-options .type{
+	color: #bd10e0;
+}
+
+.choose-options .name{
+	font-size: 20px;
+	padding: 5px 0;
+}
+
+.choose-options .price{
+	font-size: 24px;
+	display: inline-block;
+	margin: 35px 0;
+}
+
+.choose-options .price img{
+	height: 24px;
+}
+
+.choose-options .amount{
+	display: inline-block;
+	width: 90px;
+	height: 20px;
+	margin-left: 50px;
+	border-radius: 50px;
+	vertical-align: middle;
+	font-size:0;
+}
+
+
+.blue.choose-options .amount{
+	border: 2px solid #12ACFB;
+}
+.red.choose-options .amount{
+	border: 2px solid #d0021b;
+}
+.green.choose-options .amount{
+	border: 2px solid #00d23d;
+}
+.others.choose-options .amount{
+	border: 2px solid #bd10e0;
+}
+
+.choose-options .amount div{
+	font-size:12px;
+	text-align: center;
+	width: 28px;
+	height: 18px;
+	display: inline-block;
+	color: white;
+	z-index: 10;
+}
+
+
+.blue.choose-options .amount .nb{
+	border-left: 2px solid #12ACFB;
+	border-right: 2px solid #12ACFB;
+}
+.red.choose-options .amount .nb{
+	border-left: 2px solid #d0021b;
+	border-right: 2px solid #d0021b;
+}
+.green.choose-options .amount .nb{
+	border-left: 2px solid #00d23d;
+	border-right: 2px solid #00d23d;
+}
+.others.choose-options .amount .nb{
+	border-left: 2px solid #bd10e0;
+	border-right: 2px solid #bd10e0;
+}
+
+.choose-options .options .section {
+	padding: 5px 0;
+	margin-bottom: 30px;
+}
+
+.choose-options .options .title {
+	display: inline-block;
+	height: 50px;
+	vertical-align: middle;
+	font-size: 15px;
+	width: 150px;
+}
+
+
+.choose-options .options .images {
+	display: inline-block;
+	height: 50px;
+
+}
+
+.choose-options .options img {
+	width: 30px;
+}
+
+.choose-options .options .infos {
+	font-size: 11px;
+	
+}
+
+.choose-options .button{
+	width: 120px;
+	height: 25px;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 15px;
+	margin: auto;
+}
