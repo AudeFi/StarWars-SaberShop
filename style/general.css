@@ -75,6 +75,7 @@ button {
 	margin: 50px auto;
 	color: white;
 	text-transform: uppercase;
+	font-family: 'ProximaNova-Semibold';
 }
 
 
@@ -102,19 +103,20 @@ button {
    font-size: 20px;
    color: #fcfbf5 ;
    padding-bottom: 30px;
+   font-family: 'ProximaNova-Semibold';
 
 }
 
 .condition h3 {
     color: #ffb700 ;
     padding-top: 20px;
-    
+    font-family: 'ProximaNova-Semibold';
     }
 
 .condition p {
     padding-top: 15px;
     color: #fcfbf5 ;
-    
+    font-family: 'ProximaNova-Regular';
 }
 
 /*Button choose force*/
@@ -128,11 +130,13 @@ button {
     margin-left: 150px;
     margin-top: 20px;
     margin-bottom: 25px;
+
 }
 
 .choose-force a {
     text-decoration: none;
     text-transform: uppercase;
+    font-family: 'ProximaNova-Semibold';
 }
 
 .title2{
