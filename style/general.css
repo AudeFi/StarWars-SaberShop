@@ -1429,4 +1429,103 @@ body{
 
 }
 
+=======
+    padding:0;
+    background: url(../resources/etoile-1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+/*Global container*/
+
+html { 
+ margin:0;
+ padding:0;
+ 
+
+}
+
+.container{
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    height: 700px;
+
+    
+    
+}
+
+/*legal mention container*/
+
+.container.condition {
+    height: 1800px;
+	width: 520px; 
+	margin-left: auto;
+	margin-right: auto;
+	
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #fcfbf5;
+    padding-top: 20px;
+
+}
+
+h3 {
+	color: #ffb700;
+	padding-top: 20px;
+	
+	}
+
+p {
+	padding-top: 15px;
+	color: #fcfbf5;
+	
+}
+
+/*Button choose force*/
+
+.choose-force{
+	color: #fcfbf5;
+	background:#ffb700;
+	border-radius: 20px;
+	width:200px;
+	height:40px;
+	margin-left: 150px;
+	margin-top: 20px;
+}
+
+.choose-force a {
+	text-decoration: none;
+}
+
+/*Responsive */
+
+
+@media only screen and (max-width:490px) {
+
+.container.condition{
+	width: 200px;
+}
+.choose-force{
+	color: #fcfbf5;
+	background:#ffb700;
+	border-radius: 20px;
+	width:200px;
+	height:40px;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+.choose-force a {
+	text-decoration: none;
+}
+		}
 
