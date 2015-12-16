@@ -206,20 +206,23 @@ video{
 
 .buy{
 	padding-left: 50px;
+	padding-top: 20px;
 	width: 28%;
 	color: #FEFEFE;
-	font-size: 15px;
+	font-size: 19px;
+	text-align: center;
 }
 
 .buy .saber1{
+	display: block;
 	width: 200px;
 	height: 30px;
-	margin: 30px 0 5px 50px;
+	margin: auto;
 }
 
-.buy span{
-    padding-left: 90px;
-    font-size: 19px
+.buy span {
+	margin: 10px 0;
+	display: block;
 }
 
 .buy span:hover{
@@ -227,13 +230,19 @@ video{
 }
 
 .buy .saber2{
-	margin: 5px 0 10px 50px;
+	margin: auto;
+	display: block;
 	width: 200px;
 	height: 30px;
 	transform:rotate(180deg);
 }
 
 .saber-img{
+	width: 100%;
+	height: 100%;
+}
+
+.saber-img img{
 	position: absolute;
     bottom: 25px;
     right: 250px;
