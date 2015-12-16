@@ -224,10 +224,12 @@ video{
 .buy span {
 	margin: 10px 0;
 	display: block;
+	cursor:pointer;
 }
 
 .buy span:hover{
     color: #53A8D6;
+    cursor:pointer;
 }
 
 .buy .saber2{
