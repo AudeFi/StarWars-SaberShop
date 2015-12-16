@@ -1470,7 +1470,7 @@ html {
 
 }
 
-h1 {
+.condition h1 {
     text-align: center;
     font-size: 20px;
     color: #fcfbf5;
@@ -1478,13 +1478,13 @@ h1 {
 
 }
 
-h3 {
+.condition h3 {
 	color: #ffb700;
 	padding-top: 20px;
 	
 	}
 
-p {
+.condition p {
 	padding-top: 15px;
 	color: #fcfbf5;
 	
