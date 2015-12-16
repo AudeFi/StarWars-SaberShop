@@ -28,7 +28,7 @@ force_nav.addEventListener('mouseleave', function(){
 $(document).ready(function(){
 	$(window).scroll(function() {
 		var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
-		if (file == "index.html"){
+		if (file.indexOf("index.html") != -1 ){
 			var video = document.querySelector('.video-section');
 			var header = document.querySelector('.header-section');
 			if($(window).scrollTop() > 600){

@@ -46,11 +46,14 @@ video{
 	font-size: 62px;
 	color:#FEFEFE;
 	margin-top: 20%;
+	line-height: 100%;
 }
 
 .watto .subtitle{
 	color:#FEFEFE;
-	font-size: 25px;
+	font-size: 26px;
+	line-height: 100%;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 
 /*
@@ -95,6 +98,7 @@ video{
 	vertical-align: top;
 	background: black;
 	transition:all 0.7s ease;
+	cursor: pointer;
 }
 
 .choose-side img {

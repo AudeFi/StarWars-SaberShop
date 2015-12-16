@@ -2,6 +2,10 @@ body {
 	background: black;
 }
 
+span {
+	line-height: 140%;
+}
+
 .e-commerce {
 	width: 1200px;
 	margin: auto;
@@ -14,7 +18,7 @@ body {
 .row {
 	display: inline-block;
 	height: 600px;
-	font-size: 12px;
+	font-size: 14px;
 	vertical-align: top;
 }
 
@@ -22,6 +26,19 @@ body {
 	display: block;
 }
 
+.button {
+	width: 120px;
+	height: 25px;
+	border-radius: 50px;
+	text-align: center;
+	font-family: 'ProximaNova-Regular', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	   		user-select: none;
+}
 
 /*
 ** IMAGE AND INFOS
@@ -29,15 +46,10 @@ body {
 
 .row.image-infos{
 	width: 50%;
-	font-size: 15px
+	font-size: 14px
 }
 
 .image-infos .return{
-	width: 120px;
-	height: 25px;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 15px;
 	margin-left: 50px;
 }
 
@@ -68,12 +80,7 @@ body {
 	height: 100%;
 }
 
-.image-infos .button{
-	width: 120px;
-	height: 25px;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 15px;
+.image-infos .open-close{
 	margin-left: 50%;
 }
 
@@ -106,15 +113,15 @@ body {
 	width: 70%;
 }
 
+.image-infos .describe{
+	font-family: 'ProximaNova-Semibold', sans-serif;
+}
+
 .image-infos .infos span{
 	display: block;
 	margin-bottom: 20px;
 }
 
-.image-infos .infos .info-text{
-	font-size: 12px;
-	font-weight: light;
-}
 
 
 
@@ -131,7 +138,7 @@ body {
 }
 
 .products .others {
-	font-size: 11px;
+	font-size: 12px;
 	width: 100%;
 	text-align:center;
 	margin-top: 30px;
@@ -141,6 +148,7 @@ body {
 	width: 110px;
 	height: 110px;
 	margin: 8px auto;
+	cursor: pointer;
 }
 
 .blue.products .product{
@@ -173,8 +181,9 @@ body {
 }
 
 .choose-options .type{
-	font-size: 16px;
+	font-size: 20px;
 	padding: 5px 0;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 
 .blue.choose-options .type{
@@ -191,14 +200,16 @@ body {
 }
 
 .choose-options .name{
-	font-size: 20px;
+	font-size: 24px;
 	padding: 5px 0;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 
 .choose-options .price{
 	font-size: 24px;
 	display: inline-block;
 	margin: 35px 0;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 
 .choose-options .price img{
@@ -237,6 +248,11 @@ body {
 	display: inline-block;
 	color: white;
 	z-index: 10;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	   		user-select: none;
 }
 
 
@@ -266,8 +282,9 @@ body {
 	display: inline-block;
 	height: 50px;
 	vertical-align: middle;
-	font-size: 15px;
+	font-size: 16px;
 	width: 150px;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 
 
@@ -279,6 +296,7 @@ body {
 
 .choose-options .options img {
 	width: 30px;
+	cursor: pointer;
 }
 
 .choose-options .options .infos {
@@ -287,10 +305,5 @@ body {
 }
 
 .choose-options .button{
-	width: 120px;
-	height: 25px;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 15px;
 	margin: auto;
 }
