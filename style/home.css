@@ -83,7 +83,7 @@ video{
 }
 .choose-side{
 	width: calc(100% + 12px);
-	width:101%;
+	width:100%;
 }
 
 .choose-side div {
@@ -256,3 +256,398 @@ video{
     color: white;
     font-size: 35px;
 }
+
+/*
+** MEDIA QUERY 
+*/
+
+@media screen and (min-width:920px) and (max-width:1040px) {
+
+
+		.choose-side .green{
+			width:35%;
+			margin-left: 55px;
+			margin-bottom: 20px;
+				
+		}
+
+		.choose-side .red{
+			width:35%;
+			margin-left: 155px;
+			margin-bottom: 20px;
+		}
+
+		.choose-side .blue{			
+			width:35%;
+			margin-left: 55px;	
+			margin-bottom: 20px;
+		}
+
+		.choose-side .others{			
+			width:35%;
+			margin-left: 155px;
+			margin-bottom: 20px;
+		}
+
+		.special-offer{
+	position: relative;
+    width: calc(100% - 110px);
+    margin: 30px auto;
+    height: 300px;
+    background-image: url('../resources/special-offer.jpg');
+    background-size: cover;
+}
+
+		.title-offer{
+	    	font-size: 15px;
+	    	font-weight: lighter;
+	    	padding: 30px 0px 30px 50px;
+	    	color: #FEFEFE;
+	}
+
+		.title-offer .kenobi{
+			color: #53A8D6;
+			font-weight: bold;
+}
+
+		.para1-offer{
+	    	width: 50%;
+	    	text-align: left;
+	    	padding-left: 50px;
+	    	padding-bottom: 20px;
+	    	color: #FEFEFE;
+	    	font-size: 10px;
+		}
+
+		.para2-offer{
+    		width: 28%;
+    		padding-left: 50px;
+    		color: #FEFEFE;
+    		font-size: 10px;
+		}
+
+.buy{
+	padding-left: 50px;
+    padding-top: 20px;
+    width: 28%;
+    color: #FEFEFE;
+    font-size: 15px;
+    text-align: center;
+}
+
+.buy .saber1{
+	display: block;
+	width: 150px;
+	height: 30px;
+	margin: auto;
+}
+
+.buy span {
+	display: block;
+	margin: 0;
+}
+
+.buy span:hover{
+    color: #53A8D6;
+}
+
+.buy .saber2{
+	margin: auto;
+	display: block;
+	width: 150px;
+	height: 30px;
+	transform:rotate(180deg);
+}
+
+.saber-img{
+	width: 75%;
+	height: 75%;
+}
+
+.saber-img img{
+	position: absolute;
+    bottom: 25px;
+    right: 250px;
+    width: 342px;
+    height: 251px;
+    padding-left: 150px;
+}
+
+.price{
+	position: absolute;
+    width: 200px;
+    right: 4px;
+    bottom: 13px;
+    color: white;
+    font-size: 35px;
+}
+
+
+
+}
+			
+
+	@media screen and (min-width:700px) and (max-width:920px){
+
+			.choose-side div {
+				display: inline-block;
+				position: relative;
+				width: 23.4%;
+				margin: 0 12px 12px 0;
+				vertical-align: top;
+				background: black;
+				transition:all 0.7s ease;
+				height:350px;
+
+			}
+
+			.choose-side .green{
+
+				width: 45%;
+				margin-left: 15px;
+				height:350px;
+			}
+
+			.choose-side .red{
+
+				width: 45%;
+				margin-left: 15px;
+				height:350px;
+			}
+
+			.choose-side .blue{
+
+				width: 45%;
+				margin-left: 15px;
+				height:350px;
+			}
+
+			.choose-side .others{
+
+				width: 45%;
+				margin-left: 15px;
+				height:350px;
+			}
+
+			.special-offer{
+				position: relative;
+    			width: calc(100% - 110px);
+    			margin: 30px auto;
+    			height: 250px;
+    			background-image: url('../resources/special-offer.jpg');
+    			background-size: cover;
+			}
+
+		.title-offer{
+	    		font-size: 11px;
+	    		font-weight: lighter;
+	    		padding: 30px 0px 10px 20px;
+	    		color: #FEFEFE;
+			}
+
+		.title-offer .kenobi{
+				color: #53A8D6;
+				font-weight: bold;
+			}
+
+		.para1-offer{
+	    		width: 50%;
+	    		text-align: left;
+	    		padding-left: 20px;
+	    		padding-bottom: 10px;
+	    		color: #FEFEFE;
+	    		font-size: 09px;
+		}
+
+		.para2-offer{
+    			width: 50%;
+    			padding-left: 20px;
+    			color: #FEFEFE;
+    			font-size: 09px;
+		}
+
+		.buy{
+				padding-left: 20px;
+    			padding-top: 20px;
+    			width: 28%;
+    			color: #FEFEFE;
+    			font-size: 15px;
+    			text-align: center;
+		}
+
+.buy .saber1{
+				display: block;
+				width: 150px;
+				height: 20px;
+				margin: auto;
+}
+
+.buy span {
+				display: block;
+				margin: 0;
+}
+
+.buy span:hover{
+    			color: #53A8D6;
+}
+
+.buy .saber2{
+				margin: auto;
+				display: block;
+				width: 150px;
+				height: 20px;
+				transform:rotate(180deg);
+}
+
+.saber-img{
+				width: 55%;
+				height: 55%;
+
+}
+
+.saber-img img{
+	position: absolute;
+    bottom: 25px;
+    right: 150px;
+    width: 150px;
+    height: 211px;
+    
+}
+
+.price{
+	position: absolute;
+    width: 194px;
+    right: 0px;
+    bottom: 13px;
+    
+    font-size: 25px;
+}
+
+.price span{
+	margin-left: 50px;
+}
+
+
+.choose-side img {
+	width: 100%;
+	opacity: 0.3;
+	transition:all 0.7s ease;
+	height: 350px;
+}
+
+.choose-side .green:hover{
+	background: green;
+	height:350px;
+}
+
+.choose-side .green:hover img{
+	opacity: 0.7;
+	height:350px;
+}
+
+}
+
+@media screen and (min-width:600px) and (max-width:700px){
+
+	.choose-side div {
+    width: 40%;
+    margin: 0 40px 12px 0px;    
+}
+
+	.special-offer{
+		height:300px;
+	}
+
+	.title-offer{
+		font-size: 10px;
+		padding-left: 25px;
+	}
+
+	.para1-offer{
+		padding-left: 25px;
+		font-size: 08px;
+		width: 50%;
+		padding-bottom: 10px;
+	}
+
+	.para2-offer{
+		padding-left: 25px;
+		font-size: 08px;
+		width: 50%;
+	}
+
+	.buy{
+    	padding-top: 50px;
+    	width: 50%;
+    	margin-left: -30px;
+
+}
+
+	.buy span{
+		margin:0px;		
+		font-size: 13px;
+	}
+
+	.buy .saber1{
+		width: 150px;
+   		height: 20px;
+	}
+
+	.buy .saber2{
+		width: 150px;
+   		height: 20px;
+	}
+
+	.price{
+		right: 0px;
+   		bottom: 0px;
+	}
+
+	.price span{
+		font-size: 25px;
+    	margin-left: 53px;
+	}
+
+	.saber-img img{
+		position: absolute;
+    	bottom: 72px;
+    	right: 250px;
+    	height: 200px;
+    	left: 215px;
+    	width: 200px;
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+			
+	
+
+
+
+	
+	
+	
+
+	
+
+
+
+
+	
+
+
+
