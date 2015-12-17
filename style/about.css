@@ -44,3 +44,14 @@ body {
 	height: 200px;
 }
 
+.wrapper .regroup{
+	width:500px;
+	height:150px;
+	margin-left: 250px;
+}
+
+.wrapper .title1{
+	width:500px;
+	height:35px;
+}
+
