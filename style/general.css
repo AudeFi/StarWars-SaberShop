@@ -1,18 +1,12 @@
 body{
 	margin:0;
  	padding:0;
-	background: url(../resources/etoile.png) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-color: #060606
 }
 
 .container{
 	width: 100%;
 	height: 100%;
-	/*background: url('../resources/vaiseau.png'); no-repeat left top fixed;
-	background-position: cover;*/
 }
 
 .wrapper {
@@ -29,13 +23,16 @@ body{
 	padding-top: 100px;
 	font-family: 'ProximaNova-Semibold';
 	color: white;
+	text-transform: uppercase;
+	margin-bottom: -30px;
 }
 
 
 .image{
-	width: 300px;
+	width: 340px;
 	display: block;
 	margin: auto;
+	margin-bottom:-70px;
 }
 
 .wrapper > p {
@@ -78,7 +75,9 @@ button {
 	margin: 50px auto;
 	color: white;
 	text-transform: uppercase;
+	font-family: 'ProximaNova-Semibold';
 }
+
 
 @media screen and (max-width: 810px) {
   .wrapper {
@@ -88,36 +87,35 @@ button {
 
 
 
-/*Global container*/
-
-
-/*legal mention container*/
-
 .container.condition {
-    height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-    padding: 50px 300px;
-    width: 100%;
+   height: 1800px;
+    width: 520px; 
+    margin-left: auto;
+    margin-right: auto;
+
+    
+
 }
 
-
 .condition h1 {
-    text-align: center;
-    font-size: 20px;
-    color: #fcfbf5;
-    padding-top: 20px;
+   text-align: center;
+   font-size: 20px;
+   color: #fcfbf5 ;
+   padding-bottom: 30px;
+   font-family: 'ProximaNova-Semibold';
+
 }
 
 .condition h3 {
-	color: #ffb700;
-	padding-top: 20px;
-}
+    color: #ffb700 ;
+    padding-top: 20px;
+    font-family: 'ProximaNova-Semibold';
+    }
 
 .condition p {
-	padding-top: 15px;
-	color: #fcfbf5;
+    padding-top: 15px;
+    color: #fcfbf5 ;
+    font-family: 'ProximaNova-Regular';
 }
 
 /*Button choose force*/
@@ -140,6 +138,30 @@ button {
 
 .choose-force p {
 	text-align: center;
+    color: #fcfbf5 ;
+    background:#ffb700 ;
+    border-radius: 20px;
+    width:200px;
+    height:40px;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+}
+
+.choose-force a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'ProximaNova-Semibold';
+}
+
+.title2{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 100px;
+	font-family: 'ProximaNova-Semibold';
+	color: white;
+	text-transform: uppercase;
 }
 
 /*Responsive */
@@ -147,18 +169,19 @@ button {
 @media only screen and (max-width:490px) {
 
 .container.condition{
-	width: 200px;
+    width: 200px;
 }
 .choose-force{
-	color: #fcfbf5;
-	background:#ffb700;
-	border-radius: 20px;
-	width:200px;
-	height:40px;
-	margin-left: 0px;
-	margin-top: 20px;
+    color: #fcfbf5 ;
+    background:#ffb700 ;
+    border-radius: 20px;
+    width:200px;
+    height:40px;
+    margin-left: 0px;
+    margin-top: 20px;
 }
 
 .choose-force a {
-	text-decoration: none;
+    text-decoration: none;
 }
+        
