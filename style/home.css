@@ -177,7 +177,7 @@ video{
 .special-offer{
 	position: relative;
     width: calc(100% - 110px);
-    margin: 100px auto;
+    margin: 101px auto;
     height: 450px;
     background-image: url('../resources/special-offer.jpg');
     background-size: cover;
