@@ -125,23 +125,6 @@ button {
 /*Button choose force*/
 
 .choose-force{
-	color: #fcfbf5;
-	background:#ffb700;
-	border-radius: 20px;
-	width:200px;
-	height:40px;
-	margin:auto;
-	margin-top: 40px;
-}
-
-.choose-force a {
-	width: 100%;
-	text-align: center;
-	text-decoration: none;
-}
-
-.choose-force p {
-	text-align: center;
     color: #fcfbf5 ;
     background:#ffb700 ;
     border-radius: 20px;
@@ -170,6 +153,7 @@ button {
 
 /*Responsive */
 
+
 @media only screen and (max-width:490px) {
 
 .container.condition{
@@ -188,4 +172,4 @@ button {
 .choose-force a {
     text-decoration: none;
 }
-        
+        }    
