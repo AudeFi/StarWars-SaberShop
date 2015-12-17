@@ -73,8 +73,8 @@ a {
 .header-section .logo{
 	width: 9%;
     text-align: center;
-    margin-left: 45%;
-    margin-top: 0%;
+    margin-left: 42%;
+    margin-top: -1%;
 }
 
 .header-section.bg-header {
@@ -263,13 +263,56 @@ footer .bg-footernav {
 	border-radius: 50px;
 	background: #00d23d;
 	opacity: 0;
-	transition: all 0.5s ease;
 }
 
 .circle-to-basket.visible {
 	opacity: 1;
+	animation-name:vibrate2;
+	animation-duration:0.2s;
+	animation-timing-function: ease;
+	animation-iteration-count: 10;
+
+	
 }
 
-.circle-to-basket.animate {
 
+@-webkit-keyframes vibrate2 {
+  0% {opacity: 0.9;box-shadow: 0 0 32px 4px #00d23d, 0 0 10px 8px #00d23dinset;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1; }
+  80% {opacity: 0.9; }
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;box-shadow:none }
 }
+@-moz-keyframes vibrate2  {
+  0% {opacity: 0.9;box-shadow: 0 0 32px 4px #00d23d, 0 0 10px 8px #00d23d inset;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1; }
+  80% {opacity: 0.9; }
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;box-shadow:none }
+}
+@keyframes vibrate2  {
+  0% {opacity: 0.9;box-shadow: 0 0 32px 4px #00d23d, 0 0 10px 8px #00d23d inset;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1; }
+  80% {opacity: 0.9; }
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;box-shadow:none }
+}
+
