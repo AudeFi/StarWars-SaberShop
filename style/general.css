@@ -85,3 +85,80 @@ button {
 	width: auto;
 	}
 }
+
+
+
+/*Global container*/
+
+
+/*legal mention container*/
+
+.container.condition {
+    height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+    padding: 50px 300px;
+    width: 100%;
+}
+
+
+.condition h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #fcfbf5;
+    padding-top: 20px;
+}
+
+.condition h3 {
+	color: #ffb700;
+	padding-top: 20px;
+}
+
+.condition p {
+	padding-top: 15px;
+	color: #fcfbf5;
+}
+
+/*Button choose force*/
+
+.choose-force{
+	color: #fcfbf5;
+	background:#ffb700;
+	border-radius: 20px;
+	width:200px;
+	height:40px;
+	margin:auto;
+	margin-top: 40px;
+}
+
+.choose-force a {
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.choose-force p {
+	text-align: center;
+}
+
+/*Responsive */
+
+@media only screen and (max-width:490px) {
+
+.container.condition{
+	width: 200px;
+}
+.choose-force{
+	color: #fcfbf5;
+	background:#ffb700;
+	border-radius: 20px;
+	width:200px;
+	height:40px;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+.choose-force a {
+	text-decoration: none;
+}

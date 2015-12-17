@@ -86,6 +86,12 @@ buy_button.addEventListener('click', function(){
 	basket_items.push(a);
 });
 
+var aquiere_button = document.querySelector('.choose-options .aquiere');
+aquiere_button.addEventListener('click', function(){
+	var a = new item('exclu', 'exclu', 1, cristal[0], transmitter[2], lens[0]);
+	basket_items.push(a);
+});
+
 
 var open_button = document.querySelector('.image-infos .open-close');
 var amount_number = document.querySelector('.amount .nb');

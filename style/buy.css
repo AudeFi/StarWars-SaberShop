@@ -1,0 +1,20 @@
+body {
+	background: black;
+}
+
+
+.wrapper {
+	width: 1000px;
+	height: 700px;
+	margin: auto;
+	background: red;
+	padding: 80px 0;
+}
+
+.wrapper div {
+	display: block;
+}
+
+.title div{
+	display: inline-block;
+}
