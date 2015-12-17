@@ -89,7 +89,145 @@ button {
 	}
 }
 
+.button{
+	background: #ffb700;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	margin-left: 55px;
+	border-radius: 50px;
+}
 
+.button:hover{
+	background: #ffb700;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	margin-left: 55px;
+	border-radius: 50px;
+	box-shadow: 0 0 32px 4px #ffb700, 0 0 10px 8px #ffb700 inset;
+	transition-timing-function: ease;
+	transition-duration: 0.3s;
+	cursor: pointer;
+  	-webkit-animation: flicker 0.3s ease infinite;
+  	-moz-animation: flicker 0.3s ease infinite;
+  	animation: flicker 0.3s ease infinite;
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.94;
+  }
+  93% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.99;
+  }
+  96% {
+    opacity: 0.93;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.93;
+  }
+}
+@-moz-keyframes flicker {
+  0% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.94;
+  }
+  93% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.99;
+  }
+  96% {
+    opacity: 0.93;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.93;
+  }
+}
+@keyframes flicker {
+  0% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.94;
+  }
+  93% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.99;
+  }
+  96% {
+    opacity: 0.93;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.93;
+  }
+}
+
+.button p{
+	padding-top: 9px;
+	font-size: 15px;
+	color:#FEFEFE;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
 
 .container.condition {
    /* height: 1800px; */

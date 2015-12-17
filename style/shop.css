@@ -1,5 +1,10 @@
 body {
 	background: black;
+	background: url(../resources/background.jpeg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 span {
@@ -41,6 +46,219 @@ span {
 }
 
 
+.button2.red{
+	background: #d0021b;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	margin-left: 55px;
+	border-radius: 50px;
+}
+
+.button2.red:hover{
+	background: #d0021b;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	border-radius: 50px;
+	box-shadow: 0 0 32px 4px #d0021b, 0 0 10px 8px #d0021b inset;
+	transition-timing-function: ease;
+	transition-duration: 0.2s;
+	cursor: pointer;
+  	-webkit-animation: vibrate 0.2s ease infinite;
+  	-moz-animation: vibrate 0.2s ease infinite;
+  	animation: vibrate 0.2s ease infinite;
+}
+
+
+
+.button2.blue{
+	background: #12ACFB;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	margin-left: 55px;
+	border-radius: 50px;
+}
+
+.button2.blue:hover{
+	background: #12ACFB;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	border-radius: 50px;
+	box-shadow: 0 0 32px 4px #12ACFB, 0 0 10px 8px #12ACFB inset;
+	transition-timing-function: ease;
+	transition-duration: 0.2s;
+	cursor: pointer;
+  	-webkit-animation: vibrate 0.2s ease infinite;
+  	-moz-animation: vibrate 0.2s ease infinite;
+  	animation: vibrate 0.2s ease infinite;
+}
+
+
+.button2.green{
+	background: #00d23d;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	margin-left: 55px;
+	border-radius: 50px;
+}
+
+.button2.green:hover{
+	background: #00d23d;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	border-radius: 50px;
+	box-shadow: 0 0 32px 4px #00d23d, 0 0 10px 8px #00d23d inset;
+	transition-timing-function: ease;
+	transition-duration: 0.2s;
+	cursor: pointer;
+  	-webkit-animation: vibrate 0.2s ease infinite;
+  	-moz-animation: vibrate 0.2s ease infinite;
+  	animation: vibrate 0.2s ease infinite;
+}
+
+.button2.other{
+	background: #bd10e0;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	margin-left: 55px;
+	border-radius: 50px;
+}
+
+.button2.other:hover{
+	background: #bd10e0;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	border-radius: 50px;
+	box-shadow: 0 0 32px 4px #bd10e0, 0 0 10px 8px #bd10e0 inset;
+	transition-timing-function: ease;
+	transition-duration: 0.2s;
+	cursor: pointer;
+  	-webkit-animation: vibrate 0.2s ease infinite;
+  	-moz-animation: vibrate 0.2s ease infinite;
+  	animation: vibrate 0.2s ease infinite;
+}
+
+.button2 .back{
+	position: relative;
+	top: 4px;
+	font-weight: bold;
+}
+
+
+@-webkit-keyframes vibrate {
+  0% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.94;
+  }
+  93% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.99;
+  }
+  96% {
+    opacity: 0.93;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.93;
+  }
+}
+@-moz-keyframes vibrate {
+  0% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.94;
+  }
+  93% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.99;
+  }
+  96% {
+    opacity: 0.93;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.93;
+  }
+}
+@keyframes vibrate {
+  0% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.94;
+  }
+  93% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.99;
+  }
+  96% {
+    opacity: 0.93;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.93;
+  }
+}
+
+
 /*
 ** IMAGE AND INFOS
 */
@@ -56,7 +274,7 @@ span {
 }
 
 .blue.image-infos .return{
-	border: 1px solid #12ACFB;
+	
 }
 .red.image-infos .return{
 	border: 1px solid #d0021b;
@@ -558,14 +776,14 @@ span {
 .chk:checked + .saber > .light {
   height: 340px;
   -webkit-filter: blur(1px);
-  -webkit-animation: flicker 0.3s ease infinite;
-  -moz-animation: flicker 0.3s ease infinite;
-  animation: flicker 0.3s ease infinite;
+  -webkit-animation: vibrate 0.3s ease infinite;
+  -moz-animation: vibrate 0.3s ease infinite;
+  animation: vibrate 0.3s ease infinite;
 }
 
 
 
-@-webkit-keyframes flicker {
+@-webkit-keyframes vibrate {
   0% {
     opacity: 0.9;
   }
@@ -600,7 +818,7 @@ span {
     opacity: 0.93;
   }
 }
-@-moz-keyframes flicker {
+@-moz-keyframes vibrate {
   0% {
     opacity: 0.9;
   }
@@ -635,7 +853,7 @@ span {
     opacity: 0.93;
   }
 }
-@keyframes flicker {
+@keyframes vibrate {
   0% {
     opacity: 0.9;
   }
