@@ -1,8 +1,7 @@
 var basket_items = []
 
-function item(color, number, amount, cristal, transmitter, lens){
-	this.color = color;
-	this.number = number;
+function item(product, amount, cristal, transmitter, lens){
+	this.product = product;
 	this.amount = amount;
 	this.cristal = cristal;
 	this.transmitter = transmitter;
@@ -83,6 +82,8 @@ var red = [
 
 ];
 
+
+var exclu = new saber("exclu", 1, "Véritable sabre d'Obi-wan Kenobi", "Pas de description");
 
 var cristal = [
 	

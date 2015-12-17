@@ -5,7 +5,16 @@ var current_lens = lens[0];
 
 var price_options = countPriceOption();
 var amount = 1;
-var currentProduct = 1;
+var currentNumber = 1;
+
+if (color == "blue")
+	var currentProduct = bleu[0];
+else if (color == "red")
+	var currentProduct = red[0];
+else if (color == "green")
+	var currentProduct = green[0];
+else if (color == "others")
+	var currentProduct = others[0];
 
 var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
 var color = file.substring(0, file.length-11);
@@ -82,10 +91,17 @@ lens4.addEventListener('click', function(){
 
 var buy_button = document.querySelector('.choose-options .buy');
 buy_button.addEventListener('click', function(){
-	var a = new item(color, currentProduct, amount, current_cristal, current_transmitter, current_lens);
+	var a = new item(currentProduct, amount, current_cristal, current_transmitter, current_lens);
 	basket_items.push(a);
+	console.log(basket_items);
 });
 
+
+/*var aquiere_button = document.querySelector('.choose-options .aquiere');
+aquiere_button.addEventListener('click', function(){
+	var a = new item('exclu', 'exclu', 1, cristal[0], transmitter[2], lens[0]);
+	basket_items.push(a);
+});*/
 
 var open_button = document.querySelector('.image-infos .open-close');
 var amount_number = document.querySelector('.amount .nb');
@@ -94,7 +110,7 @@ var plus_button = document.querySelector('.amount .plus');
 plus_button.addEventListener('click', function(){
 	amount = amount + 1;
 	amount_number.innerHTML = amount;
-	changeToProduct(currentProduct);
+	changeToProduct(currentNumber);
 });
 
 var minus_button = document.querySelector('.amount .minus');
@@ -102,7 +118,7 @@ minus_button.addEventListener('click', function(){
 	if (amount > 1) {
 		amount = amount - 1;
 		amount_number.innerHTML = amount;
-		changeToProduct(currentProduct);
+		changeToProduct(currentNumber);
 	}
 });
 
@@ -146,26 +162,30 @@ product8.addEventListener('click', function(){
 
 
 function changeToProduct(number){
-	currentProduct = number;
+	currentNumber = number;
 	if (color == "blue") {
+		currentProduct = blue[number-1];
 		saber_big_image.src = "../resources/products/blue/"+number+"/open.png";
 		saber_description.innerHTML = blue[number-1].text ;
 		name_saber.innerHTML = blue[number-1].name ;
 		price_saber.innerHTML = (blue[number-1].price + price_options) * amount ;
 	}
 	else if (color == "green") {
+		currentProduct = green[number-1];
 		saber_big_image.src = "../resources/products/green/"+number+"/open.png";
 		saber_description.innerHTML = green[number-1].text ;
 		name_saber.innerHTML = green[number-1].name ;
 		price_saber.innerHTML = (green[number-1].price + price_options) * amount;
 	}
 	else if (color == "red") {
+		currentProduct = red[number-1];
 		saber_big_image.src = "../resources/products/red/"+number+"/open.png";
 		saber_description.innerHTML = red[number-1].text ;
 		name_saber.innerHTML = red[number-1].name ;
 		price_saber.innerHTML = (red[number-1].price + price_options) * amount ;
 	}
 	else if (color == "other") {
+		currentProduct = others[number-1];
 		saber_big_image.src = "../resources/products/others/"+number+"/open.png";
 		saber_description.innerHTML = others[number-1].text ;
 		name_saber.innerHTML = others[number-1].name ;
@@ -186,7 +206,7 @@ function changeCristal(number){
 	current_cristal = cristal[number-1];
 	price_options = countPriceOption();
 	info_cris.innerHTML = current_cristal.text;
-	changeToProduct(currentProduct);
+	changeToProduct(currentNumber);
 	for (var i = 1; i < 5; i++){
 		if (i == number)
 			cristal[i-1].src = "../resources/options/cris"+number+".png";
@@ -203,7 +223,7 @@ function changeTransmitter(number){
 	current_transmitter = transmitter[number-1];
 	price_options = countPriceOption();
 	info_trans.innerHTML = current_transmitter.text;
-	changeToProduct(currentProduct);
+	changeToProduct(currentNumber);
 	for (var i = 1; i < 5; i++){
 		if (i == number)
 			transmitter[i-1].src = "../resources/options/trans"+number+".png";
@@ -220,7 +240,7 @@ function changeLens(number){
 	current_lens = lens[number-1];
 	price_options = countPriceOption();
 	info_lens.innerHTML = current_lens.text;
-	changeToProduct(currentProduct);
+	changeToProduct(currentNumber);
 	for (var i = 1; i < 5; i++){
 		if (i == number)
 			lens[i-1].src = "../resources/options/lens"+number+".png";

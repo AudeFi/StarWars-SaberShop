@@ -89,7 +89,7 @@ button {
 /*legal mention container*/
 
 .container.condition {
-   height: 1800px;
+   /* height: 1800px; */
     width: 520px; 
     margin-left: auto;
     margin-right: auto;
