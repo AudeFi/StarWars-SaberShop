@@ -596,9 +596,7 @@ span {
 }
 
 
-
-.saber.green {
- 	background-color: #00d23d;
+.saber {
  	margin-left: 100px;
  	bottom: 50px;
   	width: 120px;
@@ -620,81 +618,22 @@ span {
   -ms-transition: all .7s ease;
   transition: all .7s ease;
   -webkit-transform: translate3d(0, 0, 0);
+}
+
+.saber.green {
+ 	background-color: #00d23d;
 }
 
 .saber.blue {
  	background-color: #12ACFB;
- 	margin-left: 100px;
- 	bottom: 50px;
-  	width: 120px;
-	height: 25px;
-	border-radius: 50px;
-	text-align: center;
-	font-family: 'ProximaNova-Regular', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	   		user-select: none;
-  position: relative;
-  display: block;
-  -webkit-transition: all .7s ease;
-  -moz-transition: all .7s ease;
-  -o-transition: all .7s ease;
-  -ms-transition: all .7s ease;
-  transition: all .7s ease;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .saber.red {
  	background-color: #d0021b;
- 	margin-left: 100px;
- 	bottom: 50px;
-  	width: 120px;
-	height: 25px;
-	border-radius: 50px;
-	text-align: center;
-	font-family: 'ProximaNova-Regular', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	   		user-select: none;
-  position: relative;
-  display: block;
-  -webkit-transition: all .7s ease;
-  -moz-transition: all .7s ease;
-  -o-transition: all .7s ease;
-  -ms-transition: all .7s ease;
-  transition: all .7s ease;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .saber.other {
  	background-color: #bd10e0;
- 	margin-left: 100px;
- 	bottom: 50px;
-  	width: 120px;
-	height: 25px;
-	border-radius: 50px;
-	text-align: center;
-	font-family: 'ProximaNova-Regular', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	   		user-select: none;
-  position: relative;
-  display: block;
-  -webkit-transition: all .7s ease;
-  -moz-transition: all .7s ease;
-  -o-transition: all .7s ease;
-  -ms-transition: all .7s ease;
-  transition: all .7s ease;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 
 

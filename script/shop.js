@@ -6,6 +6,7 @@ var price_options = countPriceOption(); // COUNT THE PRICE OF THE OPTIONS SELECT
 var amount = 1; // AMOUNT OF SABERS SELECTED
 var currentNumber = 1; // NUMBER OF THE PRODUCT SELECTED ON THE CURRENT PAGE
 
+
 var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
 var color = file.substring(0, file.length-5); // CHECK THE PAGE WHERE WE ARE AND THE COLOR
 
@@ -16,6 +17,7 @@ if (color == "bluesaber"){
 else if (color == "redsabers"){
 	var currentProduct = red[0];
 	var global_price = red[0].price;
+	document.querySelector('.container').style.visibility = "hidden";
 }
 else if (color == "greensabers"){
 	var currentProduct = green[0];
@@ -29,6 +31,16 @@ else if (color == "specialoffer"){
 	var currentProduct = exclu;
 	var global_price = exclu.price;
 }
+
+
+var anim_input = document.querySelector('.chk');
+anim_input.addEventListener("CheckboxStateChange", function(){
+	console.log("check");
+	if(anim.input.checked == true)
+		anim_input.innerHTML = "FERMER"
+	else
+		anim_input.innerHTML = "OUVRIR"
+});
 
 
 /* INFOS ABOUT THE SABER */
@@ -229,6 +241,15 @@ function changeToProduct(number){
 		name_saber.innerHTML = green[number-1].name ;
 		global_price = (green[number-1].price + price_options) * amount;
 		price_saber.innerHTML = global_price;
+		if (number == 4){
+			anim_input.checked = false;
+			anim_input.disabled = true;
+			document.querySelector('.container').style.visibility = "hidden";
+		}
+		else {
+			anim_input.disabled = false;
+			document.querySelector('.container').style.visibility = "visible";
+		}
 	}
 	else if (color == "redsabers") {
 		currentProduct = red[number-1];
@@ -237,6 +258,15 @@ function changeToProduct(number){
 		name_saber.innerHTML = red[number-1].name ;
 		global_price = (red[number-1].price + price_options) * amount;
 		price_saber.innerHTML = global_price ;
+		if (number == 1 || number == 5 || number == 7 || number == 8){
+			anim_input.checked = false;
+			anim_input.disabled = true;
+			document.querySelector('.container').style.visibility = "hidden";
+		}
+		else {
+			anim_input.disabled = false;
+			document.querySelector('.container').style.visibility = "visible";
+		}
 	}
 	else if (color == "othersabers") {
 		currentProduct = others[number-1];
@@ -245,6 +275,15 @@ function changeToProduct(number){
 		name_saber.innerHTML = others[number-1].name ;
 		global_price = (others[number-1].price + price_options) * amount;
 		price_saber.innerHTML = global_price ;
+		if (number == 2){
+			anim_input.checked = false;
+			anim_input.disabled = true;
+			document.querySelector('.container').style.visibility = "hidden";
+		}
+		else {
+			anim_input.disabled = false;
+			document.querySelector('.container').style.visibility = "visible";
+		}
 	}
 
 }
