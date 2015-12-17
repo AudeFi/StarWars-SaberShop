@@ -83,6 +83,7 @@ video{
 	position: relative;
 	width: calc(100% - 110px);
 	margin: 0 auto;
+
 }
 .choose-side{
 	width: calc(100% + 12px);
@@ -93,12 +94,13 @@ video{
 .choose-side div {
 	display: inline-block;
 	position: relative;
-	width: 23.4%;
+	width: 21%;
 	margin: 0 16px 12px 0;
 	vertical-align: top;
 	background: black;
 	transition:all 0.7s ease;
 	cursor: pointer;
+	font-size: 0px;
 }
 
 .choose-side img {
@@ -175,7 +177,7 @@ video{
 .special-offer{
 	position: relative;
     width: calc(100% - 110px);
-    margin: 70px auto;
+    margin: 100px auto;
     height: 450px;
     background-image: url('../resources/special-offer.jpg');
     background-size: cover;
@@ -357,9 +359,12 @@ video{
     color: white;
     font-size: 35px;
 }
+
+
+
 	
 
-	@media screen and (min-width:700px) and (max-width:920px){
+	@media screen and (min-width:700px) and (max-width:1400px){
 
 			.choose-side div {
 				display: inline-block;
