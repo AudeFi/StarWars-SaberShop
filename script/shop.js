@@ -34,12 +34,13 @@ else if (color == "specialoffer"){
 
 
 var anim_input = document.querySelector('.chk');
-anim_input.addEventListener("CheckboxStateChange", function(){
-	console.log("check");
-	if(anim.input.checked == true)
-		anim_input.innerHTML = "FERMER"
+anim_input.addEventListener("change", function(){
+	if(anim_input.checked == true){
+		console.log("check");
+		document.querySelector('.open-close').innerHTML = "Fermer";
+	}
 	else
-		anim_input.innerHTML = "OUVRIR"
+		document.querySelector('.open-close').innerHTML = "Ouvrir";
 });
 
 
@@ -249,6 +250,7 @@ function changeToProduct(number){
 		else {
 			anim_input.disabled = false;
 			document.querySelector('.container').style.visibility = "visible";
+			document.querySelector('.open-close').innerHTML = "Ouvrir";
 		}
 	}
 	else if (color == "redsabers") {
@@ -266,6 +268,7 @@ function changeToProduct(number){
 		else {
 			anim_input.disabled = false;
 			document.querySelector('.container').style.visibility = "visible";
+			document.querySelector('.open-close').innerHTML = "Ouvrir";
 		}
 	}
 	else if (color == "othersabers") {
@@ -283,6 +286,7 @@ function changeToProduct(number){
 		else {
 			anim_input.disabled = false;
 			document.querySelector('.container').style.visibility = "visible";
+			document.querySelector('.open-close').innerHTML = "Ouvrir";
 		}
 	}
 
