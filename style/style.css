@@ -70,9 +70,17 @@ a {
 	background-color: #202020;
 }
 
+.header-section .logo{
+	width: 20%;
+    text-align: center;
+    margin-left: 35%;
+    display: none;
+}
+
 .header-section.bg-header {
 	background-color: transparent;
 }
+
 
 .header-section .input-border {
 	width: 200px;
