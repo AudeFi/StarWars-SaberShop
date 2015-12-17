@@ -37,11 +37,18 @@ $(document).ready(function(){
 		if (file.indexOf("index.html") != -1 ){
 			var video = document.querySelector('.video-section');
 			var header = document.querySelector('.header-section');
+			var logo = document.querySelector('.logo');
 			if($(window).scrollTop() > 600){
 		        header.classList.remove('bg-header');
+		        logo.classList.remove('.logo');
+		        logo.setAttribute("style","display:block;")
+
 		    }
 		    else{
 		    	header.classList.add('bg-header');
+		    	logo.classList.remove('.logo');
+		        logo.setAttribute("style","display:none;")
+		    	
 		    }
 		}
 	});

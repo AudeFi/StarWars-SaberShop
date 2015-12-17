@@ -11,6 +11,7 @@ body{
 .container{
 	width: 100%;
 	height: 100%;
+		padding-top: 100px;
 }
 
 .wrapper {
@@ -28,7 +29,7 @@ body{
 	font-family: 'ProximaNova-Semibold';
 	color: white;
 	text-transform: uppercase;
-	margin-bottom: -30px;
+	margin-top: -130px;
 }
 
 
@@ -90,6 +91,146 @@ button {
 }
 
 
+.container .button{
+	background: #ffb700;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	margin-left: 55px;
+	border-radius: 50px;
+
+}
+
+.container .button:hover{
+	background: #ffb700;
+	text-align: center;
+	width:120px;
+	height: 30px;
+	margin-left: 55px;
+	border-radius: 50px;
+	box-shadow: 0 0 32px 4px #ffb700, 0 0 10px 8px #ffb700 inset;
+	transition-timing-function: ease;
+	transition-duration: 0.3s;
+	cursor: pointer;
+  	-webkit-animation: vibrate 0.3s ease infinite;
+  	-moz-animation: vibrate 0.3s ease infinite;
+  	animation: vibrate 0.3s ease infinite;
+}
+
+@-webkit-keyframes vibrate {
+  0% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.94;
+  }
+  93% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.99;
+  }
+  96% {
+    opacity: 0.93;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.93;
+  }
+}
+@-moz-keyframes vibrate {
+  0% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.94;
+  }
+  93% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.99;
+  }
+  96% {
+    opacity: 0.93;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.93;
+  }
+}
+@keyframes vibrate {
+  0% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.94;
+  }
+  93% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.99;
+  }
+  96% {
+    opacity: 0.93;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.93;
+  }
+}
+
+.container .button p{
+	font-size: 15px;
+	color:#FEFEFE;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 6px;
+}
 
 .container.condition {
    /* height: 1800px; */
@@ -150,6 +291,7 @@ button {
 	color: white;
 	text-transform: uppercase;
 }
+
 
 /*Responsive */
 
