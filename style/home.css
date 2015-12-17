@@ -107,6 +107,7 @@ video{
 	width: 100%;
 	opacity: 0.3;
 	transition:all 0.7s ease;
+	height: 400px;
 }
 
 .choose-side .green:hover{
@@ -320,8 +321,14 @@ video{
 				vertical-align: top;
 				background: black;
 				transition:all 0.7s ease;
-				height:350px;
+				height:auto;
 			}
+
+			.choose-side img {
+    			width: 100%;
+    			opacity: 0.3;
+    			transition: all 0.7s ease;
+    			height: auto;
 
 			.choose-side .green{
 				width: 35%;
