@@ -114,3 +114,188 @@ body{
 	font-weight: bold;
 	vertical-align: middle;
 }
+
+/*Forms*/
+
+.container-form {
+	font-style: 'white';
+
+	padding-top: 100px;
+	
+}
+
+.planetform p{
+	font-family: 'ProximaNova-Semibold';
+	text-transform: uppercase;
+}
+
+.nameform p{
+	font-family: 'ProximaNova-Semibold';
+	text-transform: uppercase;
+}
+
+.lastnameform p{
+	font-family: 'ProximaNova-Semibold';
+	text-transform: uppercase;
+}
+
+.galactiqueform p{
+	font-family: 'ProximaNova-Semibold';
+	text-transform: uppercase;
+}
+
+.adressform p{
+	font-family: 'ProximaNova-Semibold';
+	text-transform: uppercase;
+}
+
+.info-0{
+	text-align: center;
+	width: 40%;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.info-0 p{
+	text-transform: uppercase;
+	text-align: left;
+
+}
+
+.planeteform{
+	text-align: center;
+	display: inline-block;
+
+}
+
+
+.info-1{
+	text-align: center;
+	width: 40%;
+	margin: auto;
+	margin-bottom: 5px;
+
+}
+
+.info-1 p{
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.nameform{
+	text-align: center;
+	display: inline-block;
+
+}
+
+.lastnameform{
+	display: inline-block;
+	text-align: center;
+}
+
+.info-2{
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	margin-bottom: 32px;
+}
+
+.info-2 p{
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.galactiqueform{
+	text-align: center;
+	display: inline-block;
+
+}
+
+.adressform{
+	display: inline-block;
+	text-align: center;
+}
+
+
+.check-0{
+	text-align: left;
+	width: 40%;
+	margin: auto;
+}
+
+.check-0 .headtitle{
+	font-family: 'ProximaNova-Semibold';
+	text-transform: uppercase;
+}
+
+.headtitle{
+	text-transform: uppercase;
+}
+
+
+.validate{
+	text-align: center;
+}
+
+
+
+.planetstyle{
+	width: 500px;
+	text-align: left;
+	display: block;
+	margin: auto;
+	border-radius: 4px;
+}
+
+.namestyle{
+	width: 237.5px;
+	margin-right: 25px;
+	border-radius: 4px;
+}
+
+.lastnamestyle{
+	width: 230px;
+	border-radius: 4px;
+}
+
+
+.galactiquestyle{
+	width: 235px;
+	margin-right: 25px;
+	border-radius: 4px;
+}
+
+.adressstyle{
+	width: 235px;
+	border-radius: 4px;
+}
+
+.round{
+	display: inline-block;
+}
+
+.round p{
+	margin-left:20px;
+	margin-right: 35px;
+	display: inline-block;
+}
+
+.check-box1{
+	margin-top: 15px;
+	width: 140px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: white;
+	text-decoration: none;
+	border: none;
+}
+
+.check-box1 a{
+	text-transform: uppercase;
+	font-family: 'ProximaNova-Semibold';
+	font-size: 14px;
+	color: black;
+}
+
+
