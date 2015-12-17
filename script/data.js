@@ -1,8 +1,9 @@
-var basket_items = []
 
-function item(product, amount, cristal, transmitter, lens){
+
+function item(product, amount, price, cristal, transmitter, lens){
 	this.product = product;
 	this.amount = amount;
+	this.price = price
 	this.cristal = cristal;
 	this.transmitter = transmitter;
 	this.lens = lens;

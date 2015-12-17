@@ -1,20 +1,116 @@
-body {
-	background: black;
+body{
+	background: url(../resources/background.jpeg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   color: white;
 }
 
-
 .wrapper {
-	width: 1000px;
-	height: 700px;
+	width: 700px;
 	margin: auto;
-	background: red;
-	padding: 80px 0;
+	padding: 50px 0;
 }
 
 .wrapper div {
 	display: block;
 }
 
+
+/* TITLE */ 
+
+.title {
+	padding: 100px 0 50px 0;
+}
+
 .title div{
 	display: inline-block;
+}
+
+.button {
+	width: 120px;
+	height: 25px;
+	border-radius: 50px;
+	text-align: center;
+	font-family: 'ProximaNova-Regular', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	   		user-select: none;
+	border: 1px solid #00d23d;
+}
+
+.title .basket-title {
+	font-size: 20px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid white;
+	margin-left: 30%;
+}
+
+
+/* ITEMS */ 
+
+
+.items table {
+	width: 100%;
+}
+
+.items tr {
+	border-bottom: 1px solid;
+}
+
+.items td {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.items .colums-name {
+	height: 50px;
+	vertical-align: middle;
+}
+
+.items .item {
+	height: 100px;
+	vertical-align: middle;
+}
+
+.items .product-image {
+	width: 80px;
+}
+
+.items img.option {
+	width: 25px;
+	margin: 0 5px;
+}
+
+
+
+/* TOTAL */
+
+.total {
+	text-align: right;
+	vertical-align: middle;
+	height: 50px;
+	padding: 25px 0 25px 0;
+}
+
+.total img {
+	height: 20px;
+}
+
+.total span {
+	margin: 0 5px;
+	vertical-align: middle;
+}
+
+.total .button {
+	display: inline-block;
+	background-color: white;
+	border: 1px solid white;
+	color: black;
+	font-weight: bold;
+	vertical-align: middle;
 }
