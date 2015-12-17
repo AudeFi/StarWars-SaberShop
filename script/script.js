@@ -2,6 +2,12 @@ var input_research = document.querySelector('.input-research');
 var force_nav = document.querySelector('.force-nav');
 var force_link = document.querySelector('.force-a');
 
+if (sessionStorage.getItem('nbItem') != undefined) {
+	console.log("circle");
+	var circleBuy = document.querySelector('.circle-to-basket');
+	circleBuy.classList.add('visible');
+}
+
 
 input_research.addEventListener('click',function(){
 	var not_available = document.querySelector(".noresearch");
@@ -40,3 +46,5 @@ $(document).ready(function(){
 		}
 	});
 });
+
+

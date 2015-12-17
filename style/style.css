@@ -245,3 +245,23 @@ footer .bg-footernav {
 }
 
 
+.circle-to-basket{
+	position: fixed;
+	top: 28px;
+	left: 320px;
+	z-index: 15;
+	width: 15px;
+	height: 15px;
+	border-radius: 50px;
+	background: #00d23d;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.circle-to-basket.visible {
+	opacity: 1;
+}
+
+.circle-to-basket.animate {
+
+}

@@ -102,6 +102,7 @@ if (color != "specialoffer" && color != "basket") {
 
 /* BUTTONS */ 
 
+
 if (color != "specialoffer" && color != "basket") {
 	console.log("pas specia");
 	var buy_button = document.querySelector('.choose-options .buy');
@@ -117,6 +118,7 @@ if (color != "specialoffer" && color != "basket") {
 		var a = new item(currentProduct, amount, global_price, current_cristal, current_transmitter, current_lens);
 		basketItems(a);
 		console.log(a);
+		circleToBasket();
 	});
 }
 
@@ -135,6 +137,7 @@ if (color == "specialoffer") {
 		}
 		sessionStorage.setItem('nbItem', JSON.stringify(nbItem));
 		console.log(a);
+		circleToBasket();
 	});
 }
 
@@ -370,3 +373,9 @@ function getBasketItems(){
 		basket_items.push(JSON.parse(sessionStorage.getItem('item'+i)));
 	}	
 }
+
+var circleBuy = document.querySelector('.circle-to-basket');
+function circleToBasket(){
+	circleBuy.classList.add('visible');
+
+};
