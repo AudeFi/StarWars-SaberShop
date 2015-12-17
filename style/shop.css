@@ -10,7 +10,7 @@ span {
 	width: 1200px;
 	margin: auto;
 	padding-top: 120px;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 	font-size: 0px;
 	color: white;
 }
@@ -193,6 +193,9 @@ span {
 .blue.choose-options .type{
 	color: #12ACFB;
 }
+.exclusive.choose-options .type{
+	color: #12ACFB;
+}
 .red.choose-options .type{
 	color: #d0021b;
 }
@@ -311,8 +314,6 @@ span {
 .choose-options .button{
 	margin: auto;
 }
-
-
 
 
 
@@ -511,3 +512,54 @@ span {
     opacity: 0.93;
   }
 }
+
+
+
+/*
+**	SPECIAL OFFER PAGE
+*/
+
+.exclusive {
+	display: inline-block;
+	height: 600px;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+.exclusive a {
+	color: white;
+}
+
+.exclusive div {
+	display: block;
+}
+
+.exclusive.image-infos{
+	width: 57%;
+	font-size: 14px
+}
+
+.exclusive.choose-options{
+	width: 40%;
+	padding-left: 30px;
+}
+
+.exclusive .button {
+	border: 1px solid #12ACFB;
+	background-color: #12ACFB;
+}
+
+.exclusive .button.return {
+	border: 2px solid #12ACFB;
+	background-color: transparent;
+}
+
+.exclusive .button.aquiere{
+	width: 200px;
+}
+
+.exclusive .exemplaire {
+	display: inline-block;
+	margin-left: 50px;
+}
+
