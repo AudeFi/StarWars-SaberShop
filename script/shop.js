@@ -7,8 +7,11 @@ var price_options = countPriceOption();
 var amount = 1;
 var currentNumber = 1;
 
+var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
+var color = file.substring(0, file.length-11);
+
 if (color == "blue")
-	var currentProduct = bleu[0];
+	var currentProduct = blue[0];
 else if (color == "red")
 	var currentProduct = red[0];
 else if (color == "green")
@@ -16,8 +19,7 @@ else if (color == "green")
 else if (color == "others")
 	var currentProduct = others[0];
 
-var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
-var color = file.substring(0, file.length-11);
+
 
 /* INFOS ABOUT THE SABER */
 var saber_big_image = document.querySelector('.image-infos img');
@@ -96,11 +98,6 @@ buy_button.addEventListener('click', function(){
 	console.log(basket_items);
 });
 
-var aquiere_button = document.querySelector('.choose-options .aquiere');
-aquiere_button.addEventListener('click', function(){
-	var a = new item('exclu', 'exclu', 1, cristal[0], transmitter[2], lens[0]);
-	basket_items.push(a);
-});
 
 
 /*var aquiere_button = document.querySelector('.choose-options .aquiere');
@@ -171,28 +168,28 @@ function changeToProduct(number){
 	currentNumber = number;
 	if (color == "blue") {
 		currentProduct = blue[number-1];
-		saber_big_image.src = "../resources/products/blue/"+number+"/open.png";
+		saber_big_image.src = "../resources/products/blue/"+number+"/good.png";
 		saber_description.innerHTML = blue[number-1].text ;
 		name_saber.innerHTML = blue[number-1].name ;
 		price_saber.innerHTML = (blue[number-1].price + price_options) * amount ;
 	}
 	else if (color == "green") {
 		currentProduct = green[number-1];
-		saber_big_image.src = "../resources/products/green/"+number+"/open.png";
+		saber_big_image.src = "../resources/products/green/"+number+"/good.png";
 		saber_description.innerHTML = green[number-1].text ;
 		name_saber.innerHTML = green[number-1].name ;
 		price_saber.innerHTML = (green[number-1].price + price_options) * amount;
 	}
 	else if (color == "red") {
 		currentProduct = red[number-1];
-		saber_big_image.src = "../resources/products/red/"+number+"/open.png";
+		saber_big_image.src = "../resources/products/red/"+number+"/good.png";
 		saber_description.innerHTML = red[number-1].text ;
 		name_saber.innerHTML = red[number-1].name ;
 		price_saber.innerHTML = (red[number-1].price + price_options) * amount ;
 	}
 	else if (color == "other") {
 		currentProduct = others[number-1];
-		saber_big_image.src = "../resources/products/others/"+number+"/open.png";
+		saber_big_image.src = "../resources/products/others/"+number+"/good.png";
 		saber_description.innerHTML = others[number-1].text ;
 		name_saber.innerHTML = others[number-1].name ;
 		price_saber.innerHTML = (others[number-1].price + price_options) * amount ;
