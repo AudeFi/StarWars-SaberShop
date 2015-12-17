@@ -113,7 +113,7 @@ var transmitter = [
 
 var lens = [
 	
-	new options(1, "Lentille vibratoire : Cette lentille vibre très rapidement, ce qui donne une lame moins stable mais plus meurtière ", 800, "../resources/options/lens1.png"),
+	new options(1, "Lentille vibratoire : Cette lentille vibre très rapidement, ce qui donne une lame moins stable mais plus meurtière", 800, "../resources/options/lens1.png"),
 
 	new options(2, "Lentille de duel d’Ossus : C’esdet une lentille de précision expert , elle est utile lorsque le contrôle totale de la lame est requis", 700, "../resources/options/lens2-o.png"),
 

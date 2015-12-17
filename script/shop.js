@@ -96,6 +96,12 @@ buy_button.addEventListener('click', function(){
 	console.log(basket_items);
 });
 
+var aquiere_button = document.querySelector('.choose-options .aquiere');
+aquiere_button.addEventListener('click', function(){
+	var a = new item('exclu', 'exclu', 1, cristal[0], transmitter[2], lens[0]);
+	basket_items.push(a);
+});
+
 
 /*var aquiere_button = document.querySelector('.choose-options .aquiere');
 aquiere_button.addEventListener('click', function(){

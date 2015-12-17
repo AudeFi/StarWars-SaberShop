@@ -1,7 +1,11 @@
 body{
 	margin:0;
  	padding:0;
-	background-color: #060606
+	background: url(../resources/background.jpeg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
 .container{
@@ -86,7 +90,6 @@ button {
 }
 
 
-/*legal mention container*/
 
 .container.condition {
    /* height: 1800px; */
@@ -122,6 +125,23 @@ button {
 /*Button choose force*/
 
 .choose-force{
+	color: #fcfbf5;
+	background:#ffb700;
+	border-radius: 20px;
+	width:200px;
+	height:40px;
+	margin:auto;
+	margin-top: 40px;
+}
+
+.choose-force a {
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.choose-force p {
+	text-align: center;
     color: #fcfbf5 ;
     background:#ffb700 ;
     border-radius: 20px;
@@ -150,7 +170,6 @@ button {
 
 /*Responsive */
 
-
 @media only screen and (max-width:490px) {
 
 .container.condition{
@@ -169,4 +188,4 @@ button {
 .choose-force a {
     text-decoration: none;
 }
-        }
+        

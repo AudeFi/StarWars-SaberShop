@@ -1,5 +1,4 @@
 
-
 body {
 	background: black;
 	height: auto;
@@ -17,11 +16,8 @@ body {
 	left:300px;
 	top:0px;
 	text-align: center;
-	padding-top:15px;
-	padding-right: 20px;
+	position: absolute;
 }
-
-
 
 .wrapper .button{
 	background: black;
@@ -48,4 +44,14 @@ body {
 	height: 200px;
 }
 
->>>>>>> origin/master
+.wrapper .regroup{
+	width:500px;
+	height:150px;
+	margin-left: 250px;
+}
+
+.wrapper .title1{
+	width:500px;
+	height:35px;
+}
+
