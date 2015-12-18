@@ -265,15 +265,14 @@ footer .bg-footernav {
 	opacity: 0;
 }
 
-.circle-to-basket.new {
+.circle-to-basket.visible {
+	opacity: 1;
 	animation-name:vibrate2;
 	animation-duration:0.2s;
 	animation-timing-function: ease;
 	animation-iteration-count: 10;
-}
 
-.circle-to-basket.visible {
-	opacity: 1;
+	
 }
 
 

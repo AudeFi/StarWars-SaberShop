@@ -352,9 +352,6 @@ function changeLens(number){
 
 
 if (color == "basket") {
-	/*for (var i = 0; i < basket_items.length; i++) {
-		console.log(basket_items[i]);
-	}*/
 	var nb;
 	var basket_items = [];
 	getBasketItems();
@@ -425,5 +422,4 @@ function circleToBasket(){
 	window.setTimeout(function(){
 		circleBuy.classList.remove('new');
 	},2000);
-
 };
