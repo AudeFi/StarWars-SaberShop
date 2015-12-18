@@ -32,7 +32,7 @@ else if (color == "specialoffer"){
 	var global_price = exclu.price;
 }
 
-if (color != 'basket' && color != 'buy'){
+if (color != 'basket' && color != 'specialoffer'){
 	var anim_input = document.querySelector('.chk');
 	anim_input.addEventListener("change", function(){
 		if(anim_input.checked == true){
@@ -131,7 +131,6 @@ if (color != "specialoffer" && color != "basket") {
 		sessionStorage.setItem('nbItem', JSON.stringify(nbItem));
 		var a = new item(currentProduct, amount, global_price, current_cristal, current_transmitter, current_lens);
 		basketItems(a);
-		console.log(a);
 		circleToBasket();
 	});
 }
@@ -140,8 +139,6 @@ if (color == "specialoffer") {
 	console.log("specia");
 	var aquiere_button = document.querySelector('.choose-options .aquiere');
 	aquiere_button.addEventListener('click', function(){
-		var a = new item('exclu', 'exclu', 1, 15000, cristal[0], transmitter[2], lens[0]);
-		basketItems(a);
 		if (sessionStorage.getItem('nbItem') != undefined) {
 			var nbItem = JSON.parse(sessionStorage.getItem('nbItem'));
 			nbItem = nbItem + 1;
@@ -150,7 +147,8 @@ if (color == "specialoffer") {
 			var nbItem = 1;
 		}
 		sessionStorage.setItem('nbItem', JSON.stringify(nbItem));
-		console.log(a);
+		var a = new item('exclu', 'exclu', 1, 15000, cristal[0], transmitter[2], lens[0]);
+		basketItems(a);
 		circleToBasket();
 	});
 }
@@ -400,7 +398,9 @@ if (color == "basket") {
 		cell6.innerHTML = "X";
 	}
 	
-	
+	if (basket_items.length == 0) {
+		document.querySelector('.total a').style.display = "none";
+	}
 }
 
 
