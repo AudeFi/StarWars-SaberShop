@@ -404,15 +404,15 @@ if (color == "basket") {
 function removeItem(nb){
 	var table = document.querySelector('table');
 	row = table.deleteRow(nb);
-	basket_item = basket_items.splice((nb-1), 1);
+	basket_items.splice((nb-1), 1);
 	console.log(basket_items);
 	sessionStorage.clear();
 	sessionStorage.setItem('nbItem', basket_items.length);
 	for (var i = 0; i < basket_items.length; i++) {
-		var item_save = JSON.stringify(basket_item[i]);
+		var item_save = JSON.stringify(basket_items[i]);
 		sessionStorage.setItem('item'+(i+1), item_save);
 	}
-	/*window.location.reload();*/
+	window.location.reload();
 }
 
 function basketItems(item){
