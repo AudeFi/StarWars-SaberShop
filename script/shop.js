@@ -147,7 +147,7 @@ if (color == "specialoffer") {
 			var nbItem = 1;
 		}
 		sessionStorage.setItem('nbItem', JSON.stringify(nbItem));
-		var a = new item('exclu', 'exclu', 1, 15000, cristal[0], transmitter[2], lens[0]);
+		var a = new item(currentProduct, 1, 15000, cristal[0], transmitter[2], lens[0]);
 		basketItems(a);
 		circleToBasket();
 	});
