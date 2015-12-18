@@ -67,7 +67,7 @@ a {
 	overflow:hidden;
 	position: fixed;
 	z-index: 10;
-	background-color: #202020;
+	background-color: #151515;
 }
 
 .header-section .logo{
@@ -244,7 +244,7 @@ footer nav a:hover{
 footer .bg-footernav {
 	width: 1000px;
 	height: 50px;
-	background-color: #202020;
+	background-color: #151515;
 	position: absolute;
 	left: -40px;
 	top:0;
