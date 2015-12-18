@@ -32,16 +32,17 @@ else if (color == "specialoffer"){
 	var global_price = exclu.price;
 }
 
-
-var anim_input = document.querySelector('.chk');
-anim_input.addEventListener("change", function(){
-	if(anim_input.checked == true){
-		console.log("check");
-		document.querySelector('.open-close').innerHTML = "Fermer";
-	}
-	else
-		document.querySelector('.open-close').innerHTML = "Ouvrir";
-});
+if (color != 'basket' && color != 'buy'){
+	var anim_input = document.querySelector('.chk');
+	anim_input.addEventListener("change", function(){
+		if(anim_input.checked == true){
+			console.log("check");
+			document.querySelector('.open-close').innerHTML = "Fermer";
+		}
+		else
+			document.querySelector('.open-close').innerHTML = "Ouvrir";
+	});
+}
 
 
 /* INFOS ABOUT THE SABER */

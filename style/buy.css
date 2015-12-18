@@ -256,6 +256,9 @@ body{
   }
 }
 
+
+/* BUY  PAGE */
+
 .container-form .button p{
 	margin-top: 7px;
 	font-size: 15px;
@@ -271,108 +274,61 @@ body{
 	color: #fcfbf5 ;
 	font-family: 'ProximaNova-Semibold';
 	text-transform: uppercase;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
-.planetform p{
-	margin-top: -30px;
-	font-family: 'ProximaNova-Semibold';
-	text-transform: uppercase;
-}
 
-.nameform p{
-	font-family: 'ProximaNova-Semibold';
-	text-transform: uppercase;
-}
-
-.lastnameform p{
-	font-family: 'ProximaNova-Semibold';
-	text-transform: uppercase;
-}
-
-.galactiqueform p{
-	font-family: 'ProximaNova-Semibold';
-	text-transform: uppercase;
-}
-
-.adressform p{
-	font-family: 'ProximaNova-Semibold';
-	text-transform: uppercase;
-}
-
-.info-0{
-	text-align: center;
-	width: 40%;
+.wrapper-infos {
+	width: 500px;
 	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 20px;
 }
 
-.info-0 p{
+
+form label {
+	font-family: 'ProximaNova-Semibold';
 	text-transform: uppercase;
-	text-align: left;
-
 }
 
-.planeteform{
-	text-align: center;
+form .section{
+	margin: 30px 0;
+}
+
+form input {
+	width: 235px;
+	margin: 10px 25px 10px 0;
+	border-radius: 4px;
+}
+
+.info-0 {
+	width: 100%;
+}
+
+.info-0 input{
+	width: 486px;
+}
+
+.info-1 div{
 	display: inline-block;
-
+	width: 49%;
 }
 
-
-.info-1{
-	text-align: center;
-	width: 40%;
-	margin: auto;
-	margin-bottom: 5px;
-
+.info-1 input{
+	display: block;
 }
 
-.info-1 p{
-	text-transform: uppercase;
-	text-align: left;
+.block {
+	display: block;
 }
 
-.nameform{
-	text-align: center;
+.info-2 div{
 	display: inline-block;
-
-}
-
-.lastnameform{
-	display: inline-block;
-	text-align: center;
-}
-
-.info-2{
-	text-align: center;
-	width: 60%;
-	margin: auto;
-	margin-bottom: 32px;
-}
-
-.info-2 p{
-	text-transform: uppercase;
-	text-align: left;
-}
-
-.galactiqueform{
-	text-align: center;
-	display: inline-block;
-
-}
-
-.adressform{
-	display: inline-block;
-	text-align: center;
+	width: 49%;
 }
 
 
 .check-0{
 	text-align: left;
-	width: 40%;
-	margin: auto;
+	width: 100%;
 }
 
 .check-0 .headtitle{
@@ -380,69 +336,44 @@ body{
 	text-transform: uppercase;
 }
 
-.headtitle{
-	text-transform: uppercase;
+.round {
+	font-weight: light;
 }
 
 
 .validate{
+	width: 140px;
+	height: 40px;
+	background: #ffb700;
+	border-radius: 10px;
 	text-align: center;
-}
-
-
-
-.planetstyle{
-	width: 500px;
-	text-align: left;
-	display: block;
+	font-size: 15px;
+	color:#FEFEFE;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 35px;
+	line-height: 40px;
+	vertical-align: middle;
 	margin: auto;
-	border-radius: 4px;
 }
 
-.namestyle{
-	width: 237.5px;
-	margin-right: 25px;
-	border-radius: 4px;
-}
-
-.lastnamestyle{
-	width: 230px;
-	border-radius: 4px;
-}
-
-
-.galactiquestyle{
-	width: 235px;
-	margin-right: 25px;
-	border-radius: 4px;
-}
-
-.adressstyle{
-	width: 235px;
-	border-radius: 4px;
-}
 
 .round{
 	display: inline-block;
 }
 
-.round p{
-	margin-left:20px;
-	margin-right: 35px;
-	display: inline-block;
+.check-0 input {
+	width: 25px;
+	margin-left:0px;
+	border-radius: 4px;
 }
+
+
 
 .check-box1{
-	margin-top: 35px;
-	width: 140px;
-	height: 40px;
-	border-radius: 10px;
-	background-color: #ffb700;
 	text-decoration: none;
 	border: none;
-}
-
-.check-box1 a{
+	vertical-align: middle;
 	text-transform: uppercase;
 	font-family: 'ProximaNova-Semibold';
 	font-size: 14px;
@@ -450,3 +381,32 @@ body{
 }
 
 
+
+/** VALIDATED **/
+
+.validated {
+	height: 250px;
+	width: 600px;
+	background: #101010;
+	position: absolute;
+	top: 180px;
+	left: 25%;
+	visibility: hidden;
+	padding: 50px 40px;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.validated .valid-title {
+	margin: auto;
+	text-align: center;
+}
+
+.validated .valid-subtitle {
+	padding: 30px 0;
+	width: 350px;
+	margin: auto;
+	text-align: center;
+}

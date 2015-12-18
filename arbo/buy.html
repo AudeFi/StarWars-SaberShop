@@ -46,59 +46,86 @@
 <!-- Formulaire -->
 
 	    <div class="container-form">
-
-			<div class="button">
-				<p>RETOUR</p>
-			</div>
+			<a href="basket.html">
+				<div class="button">
+					<p>RETOUR</p>
+				</div>
+			</a>
 
 			<p class="titlebuy">Paiement/</p>
 
+			<div class="wrapper-infos">
 
-			<form class="info-0">
-				<div class="planetform"><p>Planète :</p><input class="planetstyle"type="text" name="planet"></div>
-            </form>
+				<form>
+					
+					<div class="section info-0">
+						<label class="planetform" for="planet">Planète :</label>
+						<input class="planetstyle"type="text" id="planet">
+					</div>
+	            	
+	            	<div class="section info-1">
+	            		<div class="block 1">
+							<label class ="nameform" for="prenom">Prenom :</label>
+							<input class="namestyle"type="text" id="prenom">
+						</div>
+						<div class="block 2">
+							<label class ="lastnameform" for="nom">Nom :</label>
+							<input class="lastnamestyle"type="text" id="nom">
+						</div>
+					</div>
 
-            <form class="info-1">
-				<div class ="nameform"><p>Prenom :</p><input class="namestyle"type="text" name="Name"></p> </div>
-				<div class ="lastnameform"><p>Nom :</p><input class="lastnamestyle"type="text"  name="Lastname"> </div>
-            </form>
+					<div class="section info-2">
+						<div class="block 1">
+							<label class="galactiqueform" for="azil">Galactique Mail :</label>
+							<input class="galactiquestyle"type="text" id="mail">
+						</div>
+						<div class="block 2">
+							<label class="adressform" for="address">Adresse :</label>
+							<input class="adressstyle"type="text" id="address">
+						</div>
+					</div>
 
-            <form class="info-2">
-				<div class="galactiqueform"><p>Galactique Mail :</p><input class="galactiquestyle"type="text" name="Mail"></div>
-				<div class="adressform"><p>Adresse :</p><input class="adressstyle"type="text"  name="Adress"></div>
-            </form>
+					<div class="section check-0">
+						<p class="headtitle"> Choisissez votre monnaie Galactique : </p>
 
-            <form class="check-0" method="post" action="">
-       			<p class="headtitle"> Choisissez votre monnaie Galactique : </p>
-       			<div class="round one">
-      	 			<input type="checkbox" value="none" name="Dataries" id="1"/><p class="titlecheck1">Dataries</p>
-      	 			<label for="1"></label> 
-      	 		</div>
-      	 		<div class="round two">
-      	 			<input type="checkbox" name="Wupiupi" id="2"/>
-      	 			<p class="titlecheck2">Wupiupi</p>
-      	 			<label for="2"></label>
-      	 		</div>
-      	 		<div class="round three">
-      	 			<input type="checkbox" name="Trugut" id="3"/>
-      	 			<p class="titlecheck3">Trugut</p>
-      	 			<label for="3"></label>
-      	 		</div>
-      	 		<div class="round four">
-      	 			<input type="checkbox" name="Pega" id="4"/>
-      	 			<p class="titlecheck4">Peggat</p> 
-      	 			<label for="4"></label>
-      	 		</div>
-			</form>
+						<label class="round one" for="1">Dataries</label>
+						<input class="round one"type="radio" value="Dataries" name="money" id="1">
 
-			<div class="validate">
-				<button class="check-box1">
-    			<a href="../index.html">Validation</a></button>
+						<label class="round two" for="2">Wupiupi</label>
+						<input class="round two"type="radio" value="Wupiupi" name="money" id="2">
+
+						<label class="round three" for="3">Trugut</label>
+						<input class="round three"type="radio" value="Trugut" name="money" id="3">
+
+						<label class="round four" for="4">Peggat</label>
+						<input class="round four"type="radio" value="Peggat" name="money" id="4">
+					</div>
+
+				</form>
+
 			</div>
 
-		
+			<section class="validated">
+				<div class="valid-title">
+					<h2>Félicitation <span class="name"></span> !</h2>
+				</div>
+				<div class="valid-subtitle">
+				Votre commande est validée avec succès, nous vous remeriont de votre confiance et de prendre pars à l'aventure, votre numéro de commande est le 13924, elle arrivera à l'adresse écrite dans environ 2 millions d'années lumières.
+				</div>
+				<div class="valid-commande">
+				</div>
+			</section>
+
+
+
+			<div class="validate">
+				<submit class="check-box1">Validation</submit>
+			</div>
+
        	</div>
 		
+		
+
 		<div class="circle-to-basket"></div>
 
 <!--
@@ -123,7 +150,12 @@
 
 	-->	
 
-
+		<script>
+			document.querySelector('.validate').addEventListener('click', function(){
+					document.querySelector('.validated').classList.add('visible');
+					document.querySelector('.name').innerHTML = document.querySelector('.namestyle').value;
+			});
+		</script>
 		<script src="../script/script.js"></script>
 	</body>
 </html>
