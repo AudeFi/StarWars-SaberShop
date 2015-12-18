@@ -26,6 +26,7 @@ video{
 	z-index: -4;
 }
 
+
 /*
 ** TITLE
 */
@@ -56,9 +57,11 @@ video{
 	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 
+
 /*
 ** TITLE
 */
+
 .title-side {
 	text-align: center;
 	border-top: 2px solid black;
@@ -198,8 +201,6 @@ video{
 	float:right;
 }
 
-
-
 .title-offer{
 	margin-top: 20px;
    	font-size: 18px;
@@ -224,14 +225,11 @@ video{
     font-family: 'ProximaNova-Regular'
 }
 
-
-
 .saber-img img {
     position: absolute;
     right: 200px;
     bottom: -8px;
     text-align: center;
-
 }
 
 .price{
@@ -257,6 +255,7 @@ video{
 	width: 25px;
 	margin-top: -4px;
 }
+
 .button-exclusif{
 	padding-top: 9px;
     color: #FEFEFE;
@@ -282,194 +281,185 @@ video{
 
 @media screen and (min-width:400px) and (max-width:1240px) {
 
-
 			.choose-side .green{
-			width:30%;
-			margin-left: 55px;
-			margin-bottom: 20px;
+				width:30%;
+				margin-left: 55px;
+				margin-bottom: 20px;
 				
 			}
 
 			.choose-side .red{
-			width:30%;
-			margin-left: 155px;
-			margin-bottom: 20px;
+				width:30%;
+				margin-left: 155px;
+				margin-bottom: 20px;
 			}
 
 			.choose-side .blue{			
-			width:30%;
-			margin-left: 55px;	
-			margin-bottom: 20px;
+				width:30%;
+				margin-left: 55px;	
+				margin-bottom: 20px;
 			}
 
 			.choose-side .others{			
-			width:30%;
-			margin-left: 155px;
-			margin-bottom: 20px;
+				width:30%;
+				margin-left: 155px;
+				margin-bottom: 20px;
 			}
 
 		
 			.choose-side div {
-			display: inline-block;
-			position: relative;
-			width: 23.4%;
-			margin: 0 12px 12px 0;
-			vertical-align: top;
-			background: black;
-			transition:all 0.7s ease;
-			height:auto;
+				display: inline-block;
+				position: relative;
+				width: 23.4%;
+				margin: 0 12px 12px 0;
+				vertical-align: top;
+				background: black;
+				transition:all 0.7s ease;
+				height:auto;
 			}
 
 			.choose-side img {
-    		width: 100%;
-    		opacity: 0.3;
-    		transition: all 0.7s ease;
-    		height: 350px
+	    		width: 100%;
+	    		opacity: 0.3;
+	    		transition: all 0.7s ease;
+	    		height: 350px
     		}
 
 			.choose-side .green{
-			width: 35%;
-			margin-left: 15px;
-			height:350px;
+				width: 35%;
+				margin-left: 15px;
+				height:350px;
 			}
 
 			.choose-side .red{
-			width: 35%;
-			margin-left: 15px;
-			height:350px;
+				width: 35%;
+				margin-left: 15px;
+				height:350px;
 			}
 
 			.choose-side .blue{
-			width: 35%;
-			margin-left: 15px;
-			height:350px;
+				width: 35%;
+				margin-left: 15px;
+				height:350px;
 			}
 
 			.choose-side .others{
-			width: 35%;
-			margin-left: 15px;
-			height:350px;
+				width: 35%;
+				margin-left: 15px;
+				height:350px;
 			}
 
 			.choose-side .green:hover{
-			background: green;
-			height:350px;
+				background: green;
+				height:350px;
 			}
 
 			.choose-side .green:hover img{
-			opacity: 0.7;
-			height:350px;
+				opacity: 0.7;
+				height:350px;
 			}
 
 			.special-offer{
-			position: relative;
-    		width: calc(96% - 110px);
-    		margin: 30px auto;
-    		height: 250px;
-    		background: black;
-    		margin-left: 70px;
-    		background-size: cover;
+				position: relative;
+	    		width: calc(96% - 110px);
+	    		margin: 30px auto;
+	    		height: 250px;
+	    		background: black;
+	    		margin-left: 70px;
+	    		background-size: cover;
   			}
 
 			.master-jedi img{
-			float:right;
+				float:right;
 			}
 
 			.title-offer{
-	    	font-size: 11px;
-	    	font-weight: lighter;
-	    	padding: 30px 0px 10px 20px;
-	    	color: #FEFEFE;
+		    	font-size: 11px;
+		    	font-weight: lighter;
+		    	padding: 30px 0px 10px 20px;
+		    	color: #FEFEFE;
 			}
 
 			.title-offer .kenobi{
-			color: #2F7CE8;
-			font-weight: bold;
+				color: #2F7CE8;
+				font-weight: bold;
 			}
 
 			.para1-offer{
-	    	width: 50%;
-	    	text-align: left;
-	    	padding-left: 20px;
-	    	padding-bottom: 10px;
-	    	color: #FEFEFE;
-	    	font-size: 09px;
+		    	width: 50%;
+		    	text-align: left;
+		    	padding-left: 20px;
+		    	padding-bottom: 10px;
+		    	color: #FEFEFE;
+		    	font-size: 09px;
 			}
 
 			.para2-offer{
-    		width: 50%;
-    		padding-left: 20px;
-    		color: #FEFEFE;
-    		font-size: 09px;
+	    		width: 50%;
+	    		padding-left: 20px;
+	    		color: #FEFEFE;
+	    		font-size: 09px;
 			}
 
 			.buy{
-			padding-left: 20px;
-    		padding-top: 20px;
-    		width: 28%;
-    		color: #FEFEFE;
-    		font-size: 15px;
-    		text-align: center;
+				padding-left: 20px;
+	    		padding-top: 20px;
+	    		width: 28%;
+	    		color: #FEFEFE;
+	    		font-size: 15px;
+	    		text-align: center;
 			}
 
 			.buy .saber1{
-			display: block;
-			width: 150px;
-			height: 20px;
-			margin: auto;
+				display: block;
+				width: 150px;
+				height: 20px;
+				margin: auto;
 			}
 
 			.buy span {
-			display: block;
-			margin: 0;
+				display: block;
+				margin: 0;
 			}
 
 			.buy span:hover{
-    		color: #2F7CE8;
+    			color: #2F7CE8;
 			}
 
 			.buy .saber2{
-			margin: auto;
-			display: block;
-			width: 150px;
-			height: 20px;
-			transform:rotate(180deg);
+				margin: auto;
+				display: block;
+				width: 150px;
+				height: 20px;
+				-webkit-transform:rotate(180deg);
+				-moz-transform:rotate(180deg);
+				-ms-transform:rotate(180deg);
+				-o-transform:rotate(180deg);
+				transform:rotate(180deg);
 			}
 
 			.saber-img{
-			width: 55%;
-			height: 55%;
+				width: 55%;
+				height: 55%;
 			}
 
 			.saber-img img{
-			position: absolute;
-    		bottom: 25px;
-    		right: 150px;
-    		width: 150px;
-    		height: 211px;    
+				position: absolute;
+	    		bottom: 25px;
+	    		right: 150px;
+	    		width: 150px;
+	    		height: 211px;    
 			}
 			
 			.price{
-			width: 250px;
-    		height: 45px;
-    		margin-top: -53px;
-    		margin-left: 25px;
-
+				width: 250px;
+	    		height: 45px;
+	    		margin-top: -53px;
+	    		margin-left: 25px;
 			}
 
 }
 
-
-
-
-
-
-
-
-
-
-
-}
 
 
 

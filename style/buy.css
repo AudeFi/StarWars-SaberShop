@@ -18,7 +18,9 @@ body{
 }
 
 
-/* TITLE */ 
+/* 
+** TITLE 
+*/ 
 
 .title {
 	padding: 100px 0 50px 0;
@@ -52,7 +54,9 @@ body{
 }
 
 
-/* ITEMS */ 
+/* 
+** ITEMS 
+*/ 
 
 
 .items table {
@@ -89,7 +93,9 @@ body{
 
 
 
-/* TOTAL */
+/* 
+** TOTAL 
+*/
 
 .total {
 	text-align: right;
@@ -129,7 +135,6 @@ body{
 	width:120px;
 	height: 30px;
 	margin-left: 55px;
-
 	border-radius: 50px;
 
 }
@@ -151,113 +156,49 @@ body{
 }
 
 @-webkit-keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 @-moz-keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 @keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 
 
-/* BUY  PAGE */
+/* 
+** BUY  PAGE 
+*/
 
 .container-form .button p{
 	margin-top: 7px;
@@ -382,7 +323,9 @@ form input {
 
 
 
-/** VALIDATED **/
+/*
+** VALIDATED
+*/
 
 .validated {
 	height: 250px;

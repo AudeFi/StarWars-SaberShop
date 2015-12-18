@@ -1,4 +1,4 @@
-
+/* OBJECTS CONSTRUCTORS */
 
 function item(product, amount, price, cristal, transmitter, lens){
 	this.product = product;
@@ -9,7 +9,6 @@ function item(product, amount, price, cristal, transmitter, lens){
 	this.lens = lens;
 }
 
-
 function saber(color, number, name, text, price){
 	this.color = color;
 	this.number = number;
@@ -17,7 +16,6 @@ function saber(color, number, name, text, price){
 	this.text = text;
 	this.price = price;
 }
-
 
 function options(number, text, price, src){
 	this.number = number;
@@ -27,6 +25,7 @@ function options(number, text, price, src){
 }
 
 
+/* ALL SABERS IN TABLES DEPENDING ON THEIR COLORS */
 
 var blue = [
 	
@@ -85,6 +84,11 @@ var red = [
 
 
 var exclu = new saber("exclu", 1, "Véritable sabre d'Obi-wan Kenobi", "Pas de description");
+
+
+
+
+/* ALL OPTIONS IN TABLES DEPENDING ON THEIR TYPES */
 
 var cristal = [
 	

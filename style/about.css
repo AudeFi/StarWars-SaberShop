@@ -45,115 +45,49 @@ body {
 	transition-timing-function: ease;
 	transition-duration: 0.3s;
 	cursor: pointer;
-  	-webkit-animation: vibrate 0.3s ease infinite;
-  	-moz-animation: vibrate 0.3s ease infinite;
-  	animation: vibrate 0.3s ease infinite;
+  -webkit-animation: vibrate 0.3s ease infinite;
+  	 -moz-animation: vibrate 0.3s ease infinite;
+  	      animation: vibrate 0.3s ease infinite;
 }
 
 @-webkit-keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 @-moz-keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 @keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+   0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 
 .wrapper .button p{
@@ -251,7 +185,7 @@ body {
 	margin-right: 10px;
 	font-weight: bold;
 	font-family: 'Didot-Regular';
-		color:#FFB700;
+	color:#FFB700;
 }
 
 .text2{

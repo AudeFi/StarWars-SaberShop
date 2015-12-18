@@ -70,12 +70,6 @@ a {
 	background-color: #151515;
 }
 
-.header-section .logo{
-	width: 9%;
-    text-align: center;
-    margin-left: 42%;
-    margin-top: -1%;
-}
 
 .header-section.bg-header {
 	background-color: transparent;
@@ -236,7 +230,6 @@ footer nav a:hover{
 
 .watto-saber p{
 	font-size: 14px;
-    /* text-transform: uppercase; */
     color: #FEFEFE;
 
 }

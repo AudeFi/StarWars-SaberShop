@@ -3,22 +3,28 @@ Star Wars - Laser Saber Shop - December 2015
 
 
 #DESCRIPTION
-
+This is a school project around the theme of Star Wars. 
+We decided to create an online shop to buy light sabers. This website is destinated to the characters of the star wars univers. Every fan of the saga can now feel like a real member of this specific univers.
+Watto decided to create this online shop and he offers different types of light sabers, some of them are the original ones (at least that's what he says), some others are copies.
 
 #FEATURES
+HTML5 - CSS3 - Javascript - Jquery - SCSS
 
 
 #RESOURCES
+We used some medias from the movies saga such as pictures and videos. 
 
 
 #INSPIRATION
+The StarWars saga
 
 
 #PROBLEMS
+The e-commerce part only use Javascript since we don't know PHP. This part may comport bugs.
 
 
 #INSTALATION
-
+No instalation needed
 
 #AUTHOR
-
+Ronan FOURREAU - Antoine PELTRE - Michael ZACCARDI - Raphaël PIACITELLI - Aude FICHEUX

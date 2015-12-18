@@ -1,15 +1,23 @@
+// GET THE CURRENT OPTIONS SELECTED
 var current_cristal = cristal[0]; 
 var current_transmitter = transmitter[0];
 var current_lens = lens[0];
-var price_options = countPriceOption(); // COUNT THE PRICE OF THE OPTIONS SELECTED
+// COUNT THE PRICE OF THE OPTIONS SELECTED
+var price_options = countPriceOption(); 
+// AMOUNT OF SABERS SELECTED
+var amount = 1; 
+ // NUMBER OF THE PRODUCT SELECTED ON THE CURRENT PAGE
+var currentNumber = 1;
 
-var amount = 1; // AMOUNT OF SABERS SELECTED
-var currentNumber = 1; // NUMBER OF THE PRODUCT SELECTED ON THE CURRENT PAGE
 
+var open_button = document.querySelector('.image-infos .open-close');
+var amount_number = document.querySelector('.amount .nb');
 
+// CHECK THE PAGE WHERE WE ARE AND THE COLOR
 var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
-var color = file.substring(0, file.length-5); // CHECK THE PAGE WHERE WE ARE AND THE COLOR
+var color = file.substring(0, file.length-5); 
 
+// INITALS THE VAR DEPENDING ON THE COLOR PAGE
 if (color == "bluesabers"){
 	var currentProduct = blue[0];
 	var global_price = blue[0].price;
@@ -17,7 +25,7 @@ if (color == "bluesabers"){
 else if (color == "redsabers"){
 	var currentProduct = red[0];
 	var global_price = red[0].price;
-	document.querySelector('.container').style.visibility = "hidden";
+	document.querySelector('.container').style.visibility = "hidden"; // THE DEFAULT RED SABER CANNOT BE OPEN
 }
 else if (color == "greensabers"){
 	var currentProduct = green[0];
@@ -32,6 +40,8 @@ else if (color == "specialoffer"){
 	var global_price = exclu.price;
 }
 
+
+// CHECK WHEN WE CLICK ON THE OPEN-CLOSE SABER BUTTON
 if (color != 'basket' && color != 'specialoffer'){
 	var anim_input = document.querySelector('.chk');
 	anim_input.addEventListener("change", function(){
@@ -45,17 +55,14 @@ if (color != 'basket' && color != 'specialoffer'){
 }
 
 
-/* INFOS ABOUT THE SABER */
+// INFOS ABOUT THE SABER IN THE DOM
 var saber_big_image = document.querySelector('.image-infos img');
 var saber_description = document.querySelector('.image-infos .info-text');
 var name_saber = document.querySelector('.choose-options .name span');
 var price_saber = document.querySelector('.choose-options .var-price');
 
 
-
-
-/* INFOS ABOUT THE OPTIONS */ 
-
+// LISTEN TO THE CLICKS AND THE CHOICE OF THE DIFFERENT OPTIONS 
 if (color != "specialoffer" && color != "basket") {
 	var info_cris = document.querySelector('.cristals .info span');
 	var cris1 = document.querySelector('.cristals .i1');
@@ -114,9 +121,7 @@ if (color != "specialoffer" && color != "basket") {
 
 
 
-/* BUTTONS */ 
-
-
+// LISTEN ON THE BUYING BUTTONS
 if (color != "specialoffer" && color != "basket") {
 	console.log("pas specia");
 	var buy_button = document.querySelector('.choose-options .buy');
@@ -154,10 +159,9 @@ if (color == "specialoffer") {
 }
 
 
-var open_button = document.querySelector('.image-infos .open-close');
-var amount_number = document.querySelector('.amount .nb');
 
 
+// LISTEN ON THE PLUS AND MINUS BOUTTON FOR THE AMOUNT OF SABERS
 if (color != "specialoffer" && color != "basket") {
 	var plus_button = document.querySelector('.amount .plus');
 	plus_button.addEventListener('click', function(){
@@ -176,6 +180,8 @@ if (color != "specialoffer" && color != "basket") {
 	});
 }
 
+
+// LISTEN ON THE CHANGE OF THE PRODUCTS
 if (color != "specialoffer" && color != "basket") {
 
 	var product1 = document.querySelector('.products .p1 img');
@@ -224,15 +230,16 @@ if (color != "specialoffer" && color != "basket") {
 /* FONCTIONS */ 
 
 
+// CHANGE THE CURRENT PRODUCT
 function changeToProduct(number){
-	currentNumber = number;
+	currentNumber = number; //GET THE NEW NUMBER
 	if (color == "bluesabers") {
-		currentProduct = blue[number-1];
-		saber_big_image.src = "../resources/products/blue/"+number+"/good.png";
-		saber_description.innerHTML = blue[number-1].text ;
-		name_saber.innerHTML = blue[number-1].name ;
-		global_price = (blue[number-1].price + price_options) * amount;
-		price_saber.innerHTML = global_price ;
+		currentProduct = blue[number-1]; //GET THE NEW PRODUCT
+		saber_big_image.src = "../resources/products/blue/"+number+"/good.png"; //CHANGE THE IMAGE
+		saber_description.innerHTML = blue[number-1].text ; //CHANGE THE DESCRIPTION
+		name_saber.innerHTML = blue[number-1].name ; //CHANGE THE NAME
+		global_price = (blue[number-1].price + price_options) * amount; //CALCULATE THE GLOBAL PRICE
+		price_saber.innerHTML = global_price ; //CHANGE THE PRICE
 	}
 	else if (color == "greensabers") {
 		currentProduct = green[number-1];
@@ -241,10 +248,10 @@ function changeToProduct(number){
 		name_saber.innerHTML = green[number-1].name ;
 		global_price = (green[number-1].price + price_options) * amount;
 		price_saber.innerHTML = global_price;
-		if (number == 4){
-			anim_input.checked = false;
-			anim_input.disabled = true;
-			document.querySelector('.container').style.visibility = "hidden";
+		if (number == 4){ //THESE ARE THE SABERS THAT CANNOT BE OPENNED WITH THE ANIMATION
+			anim_input.checked = false; //TURN OFF THE LIGHT IS IT WAS ON
+			anim_input.disabled = true; //DISABLED TO TURN ON AGAIN
+			document.querySelector('.container').style.visibility = "hidden"; //HIDE THE BUTTON
 		}
 		else {
 			anim_input.disabled = false;
@@ -292,19 +299,19 @@ function changeToProduct(number){
 }
 
 
-
+// COUNT THE PRICE OF ALL OPTIONS SELECTED
 function countPriceOption(){
 	var result = current_cristal.price + current_transmitter.price + current_lens.price;
 	return result;	
 };
 
-
+//CHANGE THE IMAGE AND DESCRIPTIONS AND DATA WHEN WE CHANGE THE CRISTAL
 function changeCristal(number){
 	current_cristal = cristal[number-1];
 	price_options = countPriceOption();
 	info_cris.innerHTML = current_cristal.text;
 	changeToProduct(currentNumber);
-	for (var i = 1; i < 5; i++){
+	for (var i = 1; i < 5; i++){ //CHANGE THE OPACITIES OF THE IMAGES
 		if (i == number)
 			cristal[i-1].src = "../resources/options/cris"+number+".png";
 		else
@@ -316,6 +323,7 @@ function changeCristal(number){
 	cris4.src = cristal[3].src;
 };
 
+//SAME WITH THE TRANSMITTER
 function changeTransmitter(number){
 	current_transmitter = transmitter[number-1];
 	price_options = countPriceOption();
@@ -333,6 +341,7 @@ function changeTransmitter(number){
 	trans4.src = transmitter[3].src;
 };
 
+//SAME WITH THE LENS
 function changeLens(number){
 	current_lens = lens[number-1];
 	price_options = countPriceOption();
@@ -351,6 +360,7 @@ function changeLens(number){
 };
 
 
+// GET THE ITEMS IN THE LOCAL STORAGE TO PUT IN THE BASKET
 if (color == "basket") {
 	var basket_items = [];
 	var nb;
@@ -358,6 +368,7 @@ if (color == "basket") {
 	var global_price = 0;
 	var total_price = document.querySelector('.total .global-price');
 
+	//CREATE A NEW COLUMN IN THE BASKET TABLE FOR EACH PRODUCT AND PUT THE RIGHT DATA
 	for (var i = 1; i <= basket_items.length; i++) {
 		newRow(i);
 		var item = document.querySelector('.colums'+i+'tr'),
@@ -401,6 +412,8 @@ if (color == "basket") {
 	}
 }
 
+
+//REMOVE AN ITEM FROM THE TABLE AND THE DATA IN THE STORAGE
 function removeItem(nb){
 	var table = document.querySelector('table');
 	row = table.deleteRow(nb);
@@ -415,12 +428,15 @@ function removeItem(nb){
 	window.location.reload();
 }
 
+
+//PUT THE PRODUCT THAT WE WANT TO BUY IN THE BASKET BY PUTTING IT IN THE LOCAL STORAGE
 function basketItems(item){
 	var nbItem = JSON.parse(sessionStorage.getItem('nbItem'));
 	var item_save = JSON.stringify(item);
 	sessionStorage.setItem('item'+nbItem, item_save);
 }
 
+//GET THE ITEMS THAT WAS PRESENT IN THE LOCAL STORAGE
 function getBasketItems(){
 	nb = JSON.parse(sessionStorage.getItem('nbItem'));
 	for (var i = 1; i <= nb; i++) {
@@ -428,6 +444,7 @@ function getBasketItems(){
 	}	
 }
 
+//ANIMATION ON THE BASKET WHEN WE ADD SOMETHING
 var circleBuy = document.querySelector('.circle-to-basket');
 function circleToBasket(){
 	circleBuy.classList.add('visible');

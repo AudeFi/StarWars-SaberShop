@@ -70,8 +70,6 @@ span {
   	animation: vibrate 0.2s ease infinite;
 }
 
-
-
 .button2.blue{
 	background: #12ACFB;
 	text-align: center;
@@ -95,7 +93,6 @@ span {
   	-moz-animation: vibrate 0.2s ease infinite;
   	animation: vibrate 0.2s ease infinite;
 }
-
 
 .button2.green{
 	background: #00d23d;
@@ -153,109 +150,43 @@ span {
 
 
 @-webkit-keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 @-moz-keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 @keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 
 
@@ -264,7 +195,6 @@ span {
 */
 
 .row.image-infos{
-
 	width: 50%;
 	font-size: 14px
 }
@@ -272,20 +202,6 @@ span {
 .image-infos .return{
 	margin-left: 50px;
 }
-
-.blue.image-infos .return{
-	
-}
-.red.image-infos .return{
-	border: 1px solid #d0021b;
-}
-.green.image-infos .return{
-	border: 1px solid #00d23d;
-}
-.others.image-infos .return{
-	border: 1px solid #bd10e0;
-}
-
 
 .image-infos .return span{
 	vertical-align: middle;
@@ -343,7 +259,6 @@ span {
 	display: block;
 	margin-bottom: 20px;
 }
-
 
 
 
@@ -584,7 +499,7 @@ span {
 }
 
 
-/* LIGHT SABER GREEN */ 
+/* LIGHT SABER VIBRATE */ 
 
 .container {
   padding-top: 0px;
@@ -654,11 +569,9 @@ span {
 	   		user-select: none;
 	text-decoration: none;
 	outline: none;
-
 }
 
 .light {
-
 	margin-left: -18px;
 	bottom: 185px;
 	background: #FFF;
@@ -672,7 +585,6 @@ span {
 	-o-transition: all .2s ease;
 	-ms-transition: all .2s ease;
 	transition: all .2s ease;
-
 }
 
 .light.red{
@@ -723,109 +635,43 @@ span {
 
 
 @-webkit-keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 @-moz-keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 @keyframes vibrate {
-  0% {
-    opacity: 0.9;
-  }
-  30% {
-    opacity: 0.97;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  88% {
-    opacity: 0.98;
-  }
-  90% {
-    opacity: 0.94;
-  }
-  93% {
-    opacity: 0.9;
-  }
-  95% {
-    opacity: 0.99;
-  }
-  96% {
-    opacity: 0.93;
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.93;
-  }
+  0% {opacity: 0.9;}
+  30% {opacity: 0.97;}
+  40% {opacity: 1;}
+  80% {opacity: 0.9;}
+  88% {opacity: 0.98;}
+  90% {opacity: 0.94;}
+  93% {opacity: 0.9;}
+  95% {opacity: 0.99;}
+  96% {opacity: 0.93;}
+  98% {opacity: 1;}
+  99% {opacity: 0.93;}
 }
 
 
