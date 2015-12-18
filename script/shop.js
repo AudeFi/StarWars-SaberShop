@@ -421,5 +421,9 @@ function getBasketItems(){
 var circleBuy = document.querySelector('.circle-to-basket');
 function circleToBasket(){
 	circleBuy.classList.add('visible');
+	circleBuy.classList.add('new');
+	window.setTimeout(function(){
+		circleBuy.classList.remove('new');
+	},2000);
 
 };
