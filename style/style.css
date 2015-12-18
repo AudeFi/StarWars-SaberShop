@@ -178,8 +178,8 @@ header a:hover {
 	text-align: center;
 	line-height: 20px;
 	vertical-align: middle;
-	opacity: 0;
 	z-index:0;
+	visibility: hidden;
 }
 
 .force-nav a {
@@ -188,8 +188,8 @@ header a:hover {
 }
 
 .force-nav.visible {
-	opacity: 1;
 	z-index: 20;
+	visibility: visible;
 	transition: all 0.3s ease;
 }
 

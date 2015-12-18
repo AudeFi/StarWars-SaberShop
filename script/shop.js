@@ -10,7 +10,7 @@ var currentNumber = 1; // NUMBER OF THE PRODUCT SELECTED ON THE CURRENT PAGE
 var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
 var color = file.substring(0, file.length-5); // CHECK THE PAGE WHERE WE ARE AND THE COLOR
 
-if (color == "bluesaber"){
+if (color == "bluesabers"){
 	var currentProduct = blue[0];
 	var global_price = blue[0].price;
 }
@@ -352,8 +352,8 @@ function changeLens(number){
 
 
 if (color == "basket") {
-	var nb;
 	var basket_items = [];
+	var nb;
 	getBasketItems();
 	var global_price = 0;
 	var total_price = document.querySelector('.total .global-price');
@@ -380,7 +380,7 @@ if (color == "basket") {
 	function newRow(nb){
 		var table = document.querySelector('table');
 		var row = table.insertRow(i);
-		row.setAttribute('class', 'colums'+i+'tr item');
+		row.setAttribute('class', 'colums'+nb+'tr item');
 		var cell1 = row.insertCell(0);
 		cell1.setAttribute('class', 'product');
 		var cell2 = row.insertCell(1);
@@ -393,6 +393,7 @@ if (color == "basket") {
 		cell5.setAttribute('class', 'price');
 		var cell6 = row.insertCell(5);
 		cell6.innerHTML = "X";
+		cell6.setAttribute('onclick', 'removeItem('+nb+')');
 	}
 	
 	if (basket_items.length == 0) {
@@ -400,7 +401,19 @@ if (color == "basket") {
 	}
 }
 
-
+function removeItem(nb){
+	var table = document.querySelector('table');
+	row = table.deleteRow(nb);
+	basket_item = basket_items.splice((nb-1), 1);
+	console.log(basket_items);
+	sessionStorage.clear();
+	sessionStorage.setItem('nbItem', basket_items.length);
+	for (var i = 0; i < basket_items.length; i++) {
+		var item_save = JSON.stringify(basket_item[i]);
+		sessionStorage.setItem('item'+(i+1), item_save);
+	}
+	/*window.location.reload();*/
+}
 
 function basketItems(item){
 	var nbItem = JSON.parse(sessionStorage.getItem('nbItem'));
