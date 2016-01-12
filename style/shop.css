@@ -22,7 +22,7 @@ span {
 
 .row {
 	display: inline-block;
-	height: 600px;
+	height: 700px;
 	font-size: 14px;
 	vertical-align: top;
 }
@@ -36,7 +36,8 @@ span {
 	height: 25px;
 	border-radius: 50px;
 	text-align: center;
-	font-family: 'ProximaNova-Regular', sans-serif;
+	/* font-family: 'ProximaNova-Regular', sans-serif; */
+	font-weight: 700;
 	font-size: 16px;
 	cursor: pointer;
 	-webkit-user-select: none;
@@ -247,12 +248,13 @@ span {
 
 .image-infos .infos{
 	margin-left: 50px;
-	margin-top: 80px;
+	margin-top: 70px;
 	width: 70%;
 }
 
 .image-infos .describe{
-	font-family: 'ProximaNova-Semibold', sans-serif;
+	/* font-family: 'ProximaNova-Regular', sans-serif; */
+	font-weight: 700;
 }
 
 .image-infos .infos span{
@@ -320,7 +322,8 @@ span {
 .choose-options .type{
 	font-size: 20px;
 	padding: 5px 0;
-	font-family: 'ProximaNova-Semibold', sans-serif;
+	/* font-family: 'ProximaNova-Regular', sans-serif; */
+	font-weight: 700;
 }
 
 .blue.choose-options .type{
@@ -342,14 +345,16 @@ span {
 .choose-options .name{
 	font-size: 24px;
 	padding: 5px 0;
-	font-family: 'ProximaNova-Semibold', sans-serif;
+	/* font-family: 'ProximaNova-Regular', sans-serif; */
+	font-weight: 700;
 }
 
 .choose-options .price{
 	font-size: 24px;
 	display: inline-block;
 	margin: 35px 0;
-	font-family: 'ProximaNova-Semibold', sans-serif;
+	/* font-family: 'ProximaNova-Regular', sans-serif; */
+	font-weight: 700;
 }
 
 .choose-options .price img{
@@ -424,7 +429,8 @@ span {
 	vertical-align: middle;
 	font-size: 16px;
 	width: 150px;
-	font-family: 'ProximaNova-Semibold', sans-serif;
+	/* font-family: 'ProximaNova-Regular', sans-serif; */
+	font-weight: 700;
 }
 
 
@@ -456,7 +462,6 @@ span {
 
 .exclusive {
 	display: inline-block;
-	height: 600px;
 	font-size: 14px;
 	vertical-align: top;
 }
@@ -471,7 +476,8 @@ span {
 
 .exclusive.image-infos{
 	width: 57%;
-	font-size: 14px
+	font-size: 14px;
+	margin-bottom: 20px;
 }
 
 .exclusive.choose-options{
@@ -504,7 +510,7 @@ span {
 .container {
   padding-top: 0px;
   width: 570px;
-  margin: 20px 0 0 200px;
+  margin: -80px 0 0 175px;
   font-family: Roboto;
   color: #dedede;
   text-shadow: 0px 1px 1px #000;
@@ -518,7 +524,7 @@ span {
 	height: 25px;
 	border-radius: 50px;
 	text-align: center;
-	font-family: 'ProximaNova-Regular', sans-serif;
+	/* font-family: 'ProximaNova-Regular', sans-serif; */
 	font-size: 16px;
 	cursor: pointer;
 	-webkit-user-select: none;
@@ -554,13 +560,15 @@ span {
 
 .saber .light {
   position: absolute;
+  left: 60px;
 }
 
 .open-close{
 	padding-top: 4px;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'ProximaNova-Semibold', sans-serif;
+	/* font-family: 'ProximaNova-Regular', sans-serif; */
+	font-weight: 700;
 	font-size: 16px;
 	cursor: pointer;
 	-webkit-user-select: none;
@@ -593,6 +601,7 @@ span {
 
 .light.blue{
 	box-shadow: 0 0 32px 4px rgba(80, 80, 80, 0), 0 0 2px 8px #378aff inset;
+	margin-left: -20px;
 }
 
 .light.green{
@@ -675,3 +684,77 @@ span {
 }
 
 
+@media screen and (max-width:1200px) {
+	.e-commerce {
+		width: 720px;
+		padding-bottom: 0;
+	}
+	.row.image-infos{
+		width: 83.333333%;
+	}
+	.row.products {
+		width:16.666%;
+	}
+	.row.choose-options {
+		height: 600px;
+		display: block;
+		width: 100%;
+		padding: 40px 0px 0 50px;
+	}
+	.row.choose-options .type {
+		display: inline-block;
+	}
+	.row.choose-options .name {
+		display: inline-block;
+		padding-left: 30px;
+	}
+	.row.choose-options .type-name {
+		display: block;
+	}
+	.row.choose-options .price-amount {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.row.choose-options .price {
+		display: inline-block;
+		margin: 0;
+		margin-top: 5px;
+	}
+	.row.choose-options .amount {
+		display: inline-block;
+		margin: 0;
+		margin-left: 20px;
+	}
+	.row.choose-options .section {
+		width: 32%;
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 25px;
+		margin-right: 5px;
+		padding-right: 15px;
+
+	}
+	.row.choose-options .section .images {
+		margin-bottom: 20px;
+	}
+	.row.choose-options .section .info {
+		text-align: justify;
+	}
+	.e-commerce .container {
+	  position: absolute;
+	  top: 737px;
+	  margin: 0;
+	  margin-left: 175px;
+	}
+
+}
+
+@media screen and (max-width:780px) {
+	
+}
+
+@media screen and (max-width:730px) {
+	.e-commerce .container {
+	  top: 835px;
+	}
+}

@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Watto Saber Industry</title>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="../style/reset.css">
 		<link rel="stylesheet" type="text/css" href="../style/style.css">
 		<link rel="stylesheet" type="text/css" href="../style/shop.css">
@@ -12,6 +13,8 @@
 		<![endif]-->
 	</head>
 	<body>
+
+	<div id="the-container">
 
 		<header>
 			<div class="header-section">
@@ -40,7 +43,7 @@
 
 		<div class="e-commerce">
 
-			<div class="exclusive image-infos">
+			<div class="exclusive row image-infos">
 				<a href="../index.html">
 				<div class="return button">
 					<span>RETOUR</span>
@@ -55,19 +58,23 @@
 				</div>
 			</div>
 
-			<div class="exclusive choose-options">
-				<div class="type">
-					<span>EXCLUSIVITE.</span>
+			<div class="exclusive row choose-options">
+				<div class="type-name">
+					<div class="type">
+						<span>EXCLUSIVITE.</span>
+					</div>
+					<div class="name">
+						<span>Véritable sabre d'Obi-Wan Kenobi</span>
+					</div>
 				</div>
-				<div class="name">
-					<span>Véritable sabre d'Obi-Wan Kenobi</span>
-				</div>
-				<div class="price">
-					<span class="var-price">15.000</span>
-					<img src="../resources/money2.png" alt="money" />
-				</div>
-				<div class="exemplaire">
-					<span>Un exemplaire unique</span>
+				<div class="price-amount">
+					<div class="price">
+						<span class="var-price">15.000</span>
+						<img src="../resources/money2.png" alt="money" />
+					</div>
+					<div class="exemplaire">
+						<span>Un exemplaire unique</span>
+					</div>
 				</div>
 				<div class="options">
 					<div class="section cristals">
@@ -112,7 +119,8 @@
 
 		<div class="circle-to-basket"></div>
 
-
+	</div>	
+	
 		<footer>
 			<span class="bg-footernav"></span>
 			<div class="footer-container">
@@ -128,8 +136,7 @@
 				</div>
 			</div>
 		</footer>
-		
-		
+
 		<script src="../script/data.js"></script>
 		<script src="../script/shop.js"></script>
 		<script src="../script/script.js"></script>

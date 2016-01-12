@@ -35,24 +35,18 @@ force_nav.addEventListener('mouseleave', function(){
 
 
 /* CHECK THE POSITION OF THE SCROLL BAR IN THE INDEX.HTML PAGE */
+var video_section = document.querySelector('.video-section');
 $(document).ready(function(){
 	$(window).scroll(function() {
 		var file = document.location.href.substring(document.location.href.lastIndexOf( "/" )+1 );
-		if (file.indexOf("index.html") != -1 ){
-			var video = document.querySelector('.video-section');
+		if (file.indexOf("index.html") != -1 ){	
 			var header = document.querySelector('.header-section');
 			var logo = document.querySelector('.logo');
-			if($(window).scrollTop() > 600){
+			if($(window).scrollTop() > video_section.clientHeight-10){
 		        header.classList.remove('bg-header');
-		        logo.classList.remove('.logo');
-		        logo.setAttribute("style","display:block;")
-
 		    }
 		    else{
-		    	header.classList.add('bg-header');
-		    	logo.classList.remove('.logo');
-		        logo.setAttribute("style","display:none;")
-		    	
+		    	header.classList.add('bg-header');		    	
 		    }
 		}
 	});
